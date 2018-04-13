@@ -435,7 +435,3 @@ force L_Immerse_exShake = true;
 force L_Immerse_force = true;
 force L_Immerse_recoil = true;
 force L_Immerse_twitch = true;
-
-
-//Testing
-We_are_Cool = true;
