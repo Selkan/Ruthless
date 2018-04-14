@@ -1,3 +1,4 @@
 # Ruthless
 
-Filer som vi tweakar ofta och länge...
+Master är senaste stable release.
+Experimental är föreslagna ändringar till nästa uppdatering.
