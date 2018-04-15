@@ -1,86 +1,100 @@
 /* assignGear specific macros */
- class soldat {												//Soldat
-    displayName = "Skyttesoldat";
-    // All randomized.
-     uniform[] = {"SAM_Crye_M90_uniform","SAM_Crye_M90_uniform_r"};		
-       vest[] = {"SAM_PlateCarrier"};
-       backpack[] = {"SAM_AssaultPack_rgr"};
-       headgear[] = {"sfp_m90w_cap"};
-       goggles[] = {};
-       hmd[] = {};
-    // Leave empty to remove all. "Default" > leave original item.
 
-    // All randomized
-    primaryWeapon[] = {"sfp_ak5c_alt"};
-    scope[] = {"sfp_optic_aimpoint"};
-    bipod[] = {};
-    attachment[] = {"sam_accv_dbal"};	//Laserpek 
-    silencer[] = {};
-    // Leave empty to remove all. "Default" for primaryWeapon > leave original weapon.
 
-    // Only *Weapons[] arrays are randomized
-    secondaryWeapon[] = {};
-    secondaryAttachments[] = {};
-    sidearmWeapon[] = {"rhsusf_weap_glock17g4"};
-    sidearmAttachments[] = {};
-    // Leave empty to remove all. "Default" for secondaryWeapon or sidearmWeapon > leave original weapon.
+class soldat {                          //Soldat
+	displayName = "Skyttesoldat";
+    
+    	// All randomized.
+    	 uniform[] = 
+     	{
+     		"SAM_Crye_M90_uniform",
+     		"SAM_Crye_M90_uniform_r"
+    	 };
+     
+       	vest[] = {"SAM_PlateCarrier"};
+       
+       	backpack[] = {"SAM_AssaultPack_rgr"};
+       	headgear[] = {"sfp_m90w_cap"};
+       	goggles[] = {};
+       	hmd[] = {};
+    	// Leave empty to remove all. "Default" > leave original item.
 
-    // These are added to the uniform or vest
-    magazines[] =
-    {
-        LIST_2("rhsusf_mag_17Rnd_9x19_JHP"),
+    	// All randomized
+    	primaryWeapon[] = {"sfp_ak5c_alt"};
+    	scope[] = {"sfp_optic_aimpoint"};
+    	bipod[] = {};
+    	attachment[] = {"sam_accv_dbal"};
+    	silencer[] = {};
+    	// Leave empty to remove all. "Default" for primaryWeapon > leave original weapon.
+
+
+    	// Only *Weapons[] arrays are randomized
+    	secondaryWeapon[] = {};
+    	secondaryAttachments[] = {};
+    	sidearmWeapon[] = {"rhsusf_weap_glock17g4"};
+    	sidearmAttachments[] = {};
+   	 // Leave empty to remove all. "Default" for secondaryWeapon or sidearmWeapon > leave original weapon.
+
+    	// These are added to the uniform or vest
+    	magazines[] =
+    	{
+        	LIST_2("rhsusf_mag_17Rnd_9x19_JHP"),
 		LIST_8("sfp_30Rnd_556x45_Stanag"),
 		LIST_2("sam_hgr90"),
 		LIST_2("sam_rhgr5"),
 		"sam_chgr96"
-    };
-    items[] = 
-    {
+    	};
+    
+   	 items[] = 
+    	{
 		"ACE_EarPlugs",
-        LIST_2("ACE_fieldDressing"),
+        	LIST_2("ACE_fieldDressing"),
 		"ACE_tourniquet",
 		"ACE_Flashlight_KSF1",
 		"ACE_IR_Strobe_Item"
-    };
+    	};
 	
-    // These are added directly into their respective slots
-    linkedItems[] = {
-        "ItemMap",
-        "ItemCompass",
+    	// These are added directly into their respective slots
+    	linkedItems[] = {
+        	"ItemMap",
+        	"ItemCompass",
 		"ItemRadio",
-        "ItemWatch"
-    };
+        	"ItemWatch"
+   	};
 
-    // These are put into the backpack
-    backpackItems[] = {
+    	// These are put into the backpack
+    	backpackItems[] = {
 		"SAM_HelmetIA_M90",
 		"G_Combat",
 		"rhsusf_ANPVS_15",
 		"ACE_CableTie",
 		"ACE_key_lockpick",
 		"ACE_Banana"		
-    };
+    	};
 
-    // This is executed after unit init is complete. argument: _this = _unit.
-    code = "";
+    	// This is executed after unit init is complete. argument: _this = _unit.
+    	code = "";
 
-    // These are acre item radios that will be added during the ACRE init. ACRE radios added via any other system will be erased.
-    radios[] = {"ACRE_PRC343"};
+    	// These are acre item radios that will be added during the ACRE init. ACRE radios added via any other system will be erased.
+    	radios[] = {"ACRE_PRC343"};
 };
-class grpc : soldat											//Gruppchef 
+
+class grpc : soldat                     //Gruppchef
+
 {
-    displayName = "Gruppchef";
-    backpack[] = {"SAM_Kitbag_rgr"};
+	displayName = "Gruppchef";
+    	backpack[] = {"SAM_Kitbag_rgr"};
 	primaryWeapon[] = {"sfp_ak5c_m203"};
-    items[] +=
-    {
-        "ACRE_PRC148",
+    	items[] +=
+    	{
+        	"ACRE_PRC148",
 		"ACE_MapTools",
 		LIST_4("1Rnd_HE_Grenade_shell")
-    };
-    backpackItems[] += {
-        LIST_2("1Rnd_Smoke_Grenade_shell"),
-        LIST_2("1Rnd_SmokeRed_Grenade_shell"),
+ 	};
+	
+    	backpackItems[] += {
+        	LIST_2("1Rnd_Smoke_Grenade_shell"),
+        	LIST_2("1Rnd_SmokeRed_Grenade_shell"),
 		LIST_2("1Rnd_SmokeGreen_Grenade_shell"),
 		LIST_2("SmokeShellGreen"),
 		LIST_2("SmokeShellRed"),
@@ -92,57 +106,67 @@ class grpc : soldat											//Gruppchef
 		LIST_5("Chemlight_green"),
 		LIST_5("Chemlight_red"),
 		LIST_5("Chemlight_yellow")
-    };	
+    	};	
 };
-class stfgrpc : grpc {											//ställföreträdande gruppchef
-    displayName = "Stf gruppchef";
+
+class stfgrpc : grpc {                      //ställföreträdande gruppchef
+    	displayName = "Stf gruppchef";
+
 };
+
 class plutc : grpc {
-    displayName = "Plutonchef";
-    linkedItems[] += {
+    	displayName = "Plutonchef";
+    	linkedItems[] += {
         "ItemGPS",
-    };
+    	};
 };
+
 class stfplutc : plutc {
-    displayName = "Stf plutonchef";
-    linkedItems[] += {
-        "ItemGPS",
-    };
+    	displayName = "Stf plutonchef";
+	linkedItems[] += {
+        	"ItemGPS",
+    	};
 };
-class kompc : soldat											//Kompanichef
+
+class kompc : soldat                      //Kompanichef
+
 {
-    displayName = "Kompanichef";
-    backpack[] = {"SAM_Kitbag_rgr"};
+    	displayName = "Kompanichef";
+    	backpack[] = {"SAM_Kitbag_rgr"};
 	vest[] = {"V_Safety_yellow_F"};   
 	primaryWeapon[] = {};
-    items[] +=
-    {
-        "ACRE_PRC148",
+    	items[] +=
+    	{
+        	"ACRE_PRC148",
 		"ACE_MapTools"
-    };
-    linkedItems[] += {
-        "ItemGPS",
-    };	
-    backpackItems[] += {
+    	};
+    	linkedItems[] += {
+        	"ItemGPS",
+    	};	
+    	backpackItems[] += {
 		"ACE_SpraypaintBlue",
 		LIST_5("Chemlight_green"),
 		LIST_5("Chemlight_red"),
 		LIST_5("Chemlight_yellow")
-    };	
+    	};	
 };
-class stfkompc : kompc {										//Ställföreträdande Kompanichef ärver gear from Kompanichef
-    displayName = "Stf kompanichef";														
-};
-class sjv : soldat {											// sjukårdare
-    displayName = "Sjukvårdare";
-       backpack[] = {"SAM_Kitbag_rgr_med"};
-    primaryWeapon[] = {"sfp_ak5c"};
-    items[] += 
-    {
+
+class stfkompc : kompc {                    //Ställföreträdande Kompanichef ärver gear from Kompanichef
+    	displayName = "Stf kompanichef";
+	};
+	
+class sjv : soldat {
+    	displayName = "Sjukvårdare";          // sjukårdare
+       	backpack[] = {"SAM_Kitbag_rgr_med"};
+    	primaryWeapon[] = {"sfp_ak5c"};
+    	items[] += 
+    	{
+
+
 		"ACE_morphine"
-    };
-    backpackItems[] += {
-        LIST_15("ACE_fieldDressing"),
+    	};
+    	backpackItems[] += {
+        	LIST_15("ACE_fieldDressing"),
 		LIST_15("ACE_packingBandage"),
 		LIST_15("ACE_elasticBandage"),
 		LIST_5("ACE_quikclot"),
@@ -153,156 +177,182 @@ class sjv : soldat {											// sjukårdare
 		LIST_8("ACE_epinephrine"),
 		LIST_8("ACE_morphine"),
 		"ACE_SpraypaintRed"
-		};
+	};
 };
-class ksp90 : soldat {											//Soldat KSP90
-    displayName = "Kulspruteskytt 90";
-       backpack[] = {"SAM_Kitbag_rgr"};
-    primaryWeapon[] = {"rhs_weap_m249_pip_S_para"};
-    magazines[] =
-    {
-        LIST_2("rhsusf_mag_17Rnd_9x19_JHP"),
+
+class ksp90 : soldat {                        //Soldat KSP90
+    	displayName = "Kulspruteskytt 90";
+       	backpack[] = {"SAM_Kitbag_rgr"};
+    	primaryWeapon[] = {"rhs_weap_m249_pip_S_para"};
+    	magazines[] =
+    	{
+        	LIST_2("rhsusf_mag_17Rnd_9x19_JHP"),
+
 		"rhs_200rnd_556x45_M_SAW",
 		LIST_2("sam_hgr90"),
 		LIST_2("sam_rhgr5"),
 		"sam_chgr96"
-    };
-    backpackItems[] += {
+    	};
+    	backpackItems[] += {
 		LIST_3("rhs_200rnd_556x45_M_SAW"),
 		"ACE_SpareBarrel"
-    };
+    	};
 };
-class ksp58 : soldat {											//Soldat KSP58
-    displayName = "Kulspruteskytt 58";
-       backpack[] = {"SAM_Kitbag_rgr"};
-    primaryWeapon[] = {"SAM_KSP58B2"};
-    magazines[] =
-    {
-        LIST_2("rhsusf_mag_17Rnd_9x19_JHP"),
-		"SAM_99Rnd_762x51",
-		LIST_2("sam_hgr90"),
-		LIST_2("sam_rhgr5"),
-		"sam_chgr96"
-    };
-    backpackItems[] += {
-		LIST_3("SAM_99Rnd_762x51"),
-		LIST_4("SAM_99Rnd_762x51_T"),
-		"ACE_SpareBarrel"
-    };
+
+
+class ksp58 : soldat {                      //Soldat KSP58
+    	  displayName = "Kulspruteskytt 58";
+       	backpack[] = {"SAM_Kitbag_rgr"};
+    	  primaryWeapon[] = {"SAM_KSP58B2"};
+    	  magazines[] = {
+        	LIST_2("rhsusf_mag_17Rnd_9x19_JHP"),
+		      "SAM_99Rnd_762x51",
+		      LIST_2("sam_hgr90"),
+		      LIST_2("sam_rhgr5"),
+		      "sam_chgr96"
+    	    };
+    	  backpackItems[] += {
+		    LIST_3("SAM_99Rnd_762x51"),
+		    LIST_4("SAM_99Rnd_762x51_T"),
+		    "ACE_SpareBarrel"
+    	};
 };
-class farb : soldat {											//Fältarbetare
-    displayName = "Fältarbetare";
-       backpack[] = {"SAM_Kitbag_rgr_eng"};
+
+
+class farb : soldat {                     //Fältarbetare
+    	displayName = "Fältarbetare";
+       	backpack[] = {"SAM_Kitbag_rgr_eng"};
 	primaryWeapon[] = {"sfp_ak5c"};
-    items[] += 
-    {
-		"ACE_Clacker"	//detonator
-    };
-    backpackItems[] += {
+    	items[] += 
+    	{
+		"ACE_Clacker"
+    	};
+    	backpackItems[] += {
+
         "sfp_optic_3x_aimpoint",
-		LIST_2("ClaymoreDirectionalMine_Remote_Mag"),
-		LIST_3("SLAMDirectionalMine_Wire_Mag"),
-		"sfp_sprdeg46_mag",	//C4 
-		"ACE_SpraypaintBlue",
-		"ACE_SpraypaintGreen",
-		"ACE_SpraypaintRed",
-		"ACE_DefusalKit",
-		"MineDetector",
-		LIST_4("Chemlight_green"),
-		LIST_4("Chemlight_blue"),
-		LIST_4("Chemlight_yellow"),
-		LIST_4("Chemlight_red"),
-		"ACE_wirecutter"
-    };
+		    LIST_2("ClaymoreDirectionalMine_Remote_Mag"),
+		    LIST_3("SLAMDirectionalMine_Wire_Mag"),
+		    "sfp_sprdeg46_mag",	//C4 
+		    "ACE_SpraypaintBlue",
+		    "ACE_SpraypaintGreen",
+		    "ACE_SpraypaintRed",
+		    "ACE_DefusalKit",
+		    "MineDetector",
+		    LIST_4("Chemlight_green"),
+		    LIST_4("Chemlight_blue"),
+		    LIST_4("Chemlight_yellow"),
+		    LIST_4("Chemlight_red"),
+		    "ACE_wirecutter"
+    	  };
 };
-class robot : soldat {											//Robotskytt
-    displayName = "Robotskytt";
+
+
+class robot : soldat {                      //Robotskytt
+    	displayName = "Robotskytt";
 	primaryWeapon[] = {"sfp_ak5c_alt","sfp_ak5c"};
-    secondaryWeapon[] = {"launch_NLAW_F"};	//Vanilla NLAW
+    	secondaryWeapon[] = {"launch_NLAW_F"};
 };
-class grkplutc : grpc {											//GRK plutonchef
-    displayName = "GRK Plutonchef";
-    items[] += 
-    {
+
+class grkplutc : grpc {
+    	displayName = "GRK Plutonchef";
+    	items[] += 
+    	{
+
 		"ACE_RangeTable_82mm",
-    };
+    	};
 	
     // These are added directly into their respective slots
-    linkedItems[] += {
-        "ACE_Vector",	//"Rangefinder"
+                   //"Rangefinder"
+    	linkedItems[] += {
+        	"ACE_Vector",
+
 		"ACE_microDAGR"
-    };
+    	};
 };
-class pjasc : grkplutc {										//GRK gruppchef
+
+
+class pjasc : grkplutc {                    //GRK gruppchef
+
 	displayName = "Pjäsgruppchef";
 };
+
 class grk : soldat {
-    displayName = "GRK-soldat";
-    items[] += 
-    {
+    	displayName = "GRK-soldat";
+    	items[] += 
+    	{
 		"ACE_MapTools"
-    };
+    	};
 };
-class mekaniker : soldat {										//Mekaniker
-    displayName = "Mekaniker";
-    items[] += 
-    {
+
+
+class mekaniker : soldat {                    //Mekaniker
+    	displayName = "Mekaniker";
+    	items[] += 
+    	{
+
 		"ACE_Flashlight_XL50"
-    };
+    	};
 };
+
+
 class suavgrpc : soldat											//SUAV Gruppchef 
+
 {
-    displayName = "SUAV-gruppchef";
-    backpack[] = {"SAM_Kitbag_rgr"};
+    	displayName = "SUAV-gruppchef";
+    	backpack[] = {"SAM_Kitbag_rgr"};
 	primaryWeapon[] = {"sfp_ak5c_m203"};
-    items[] +=
-    {
-        "ACRE_PRC148",
+    	items[] +=
+    	{
+        	"ACRE_PRC148",
 		"ACE_MapTools",
 		LIST_4("1Rnd_HE_Grenade_shell")
-    };
-    backpackItems[] += {
-        "B_UavTerminal",
-		LIST_2("1Rnd_Smoke_Grenade_shell"),
-        LIST_2("1Rnd_SmokeRed_Grenade_shell"),
-		LIST_2("1Rnd_SmokeGreen_Grenade_shell"),
-		LIST_2("SmokeShellGreen"),
-		LIST_2("SmokeShellRed"),
-		"UGL_FlareGreen_F",	
-		"UGL_FlareRed_F",
-		"UGL_FlareCIR_F",
-		"ACE_HandFlare_Green",
-		LIST_5("Chemlight_green"),
-		LIST_5("Chemlight_red"),
-		LIST_5("Chemlight_yellow")
-    };	
+    	};
+    	backpackItems[] += {
+        	"B_UavTerminal",
+		      LIST_2("1Rnd_Smoke_Grenade_shell"),
+        	LIST_2("1Rnd_SmokeRed_Grenade_shell"),
+		      LIST_2("1Rnd_SmokeGreen_Grenade_shell"),
+		      LIST_2("SmokeShellGreen"),
+		      LIST_2("SmokeShellRed"),
+		      "UGL_FlareGreen_F",	
+		      "UGL_FlareRed_F",
+		      "UGL_FlareCIR_F",
+		      "ACE_HandFlare_Green",
+		      LIST_5("Chemlight_green"),
+		      LIST_5("Chemlight_red"),
+		      LIST_5("Chemlight_yellow")
+    	};	
 };
+
+
 class uav : soldat {											//SUAV Pilot "borde heta SUAV"
-    displayName = "SUAV-pilot";
-       backpack[] = {"B_UAV_06_backpack_F"};
-    items[] +=
-    {
-		"SAM_HelmetIA_M90",
-		"rhsusf_ANPVS_15",
-    };
+    	displayName = "SUAV-pilot";
+       	backpack[] = {"B_UAV_06_backpack_F"};
+    	items[] +=
+    	{
+
+		    "SAM_HelmetIA_M90",
+		    "rhsusf_ANPVS_15",
+    	};
 	backpackItems[] = {"Default"};
-    radios[] += {"ACRE_PRC152"};
+   	radios[] += {"ACRE_PRC152"};
 };
+
+
 class prsk : soldat {											//Prickskytt 
-    displayName = "Prickskytt";
-    // All randomized.
-     uniform[] = {"SAM_Crye_M90_ghillie"};
-       headgear[] = {};
-    primaryWeapon[] = {"SAM_PSG90A"};
-    scope[] = {"sfp_optic_kikarsikte90b_10x"};
-    attachment[] = {};
-    magazines[] =
-    {
-        LIST_2("rhsusf_mag_17Rnd_9x19_JHP"),
-		LIST_8("sam_9Rnd_762x51_mag"),
-		LIST_2("sam_hgr90"),
-		LIST_2("sam_rhgr5"),
-		"sam_chgr96"
+	displayName = "Prickskytt";
+   // All randomized.
+   uniform[] = {"SAM_Crye_M90_ghillie"};
+   headgear[] = {};
+   primaryWeapon[] = {"SAM_PSG90A"};
+   scope[] = {"sfp_optic_kikarsikte90b_10x"};
+   attachment[] = {};
+   magazines[] = {
+        	LIST_2("rhsusf_mag_17Rnd_9x19_JHP"),
+		      LIST_8("sam_9Rnd_762x51_mag"),
+		      LIST_2("sam_hgr90"),
+		      LIST_2("sam_rhgr5"),
+		      "sam_chgr96"
     };
 	items[] +=
 	{
@@ -312,168 +362,196 @@ class prsk : soldat {											//Prickskytt
         "ACE_Yardage450" 	//rangefinder för prickskytt specifikt	
     };
 };
+
+
 class obs : soldat {											//Observatör
-    displayName = "Observatör";
-     uniform[] = {"SAM_Crye_M90_ghillie"};
-       backpack[] = {"SAM_Kitbag_rgr_eng"};
-	   items[] += 
-    {
+    	displayName = "Observatör";
+     	uniform[] = {"SAM_Crye_M90_ghillie"};
+      backpack[] = {"SAM_Kitbag_rgr_eng"};
+	items[] += 
+    	{
+
 		"ACRE_PRC148",
 		"ACE_Clacker",	//Detonator
 		"ACE_DefusalKit"
-    };
-    backpackItems[] += {
-		"ACE_Clacker",	// Detonator nr2 
-		"sfp_optic_3x_aimpoint",
-        LIST_2("ClaymoreDirectionalMine_Remote_Mag"),
-		"ACE_wirecutter",		
-    };
-    linkedItems[] += {
-        "ACE_Vector"
-    };
+
+    	};
+    	backpackItems[] += {
+	        "ACE_Clacker",	// Detonator nr2 
+		      "sfp_optic_3x_aimpoint",
+          LIST_2("ClaymoreDirectionalMine_Remote_Mag"),
+		      "ACE_wirecutter",		
+    	};
+    	linkedItems[] += {
+        	"ACE_Vector"
+    	};
 };
+
+
 class vc : soldat {											//Vagnchef
-    displayName = "Vagnchef";
-     uniform[] = {"sfp_m90p_uniform"};
-       vest[] = {"sfp_kroppsskydd94"};
-       backpack[] = {};
-       headgear[] = {"rhsusf_cvc_green_ess"};
-    primaryWeapon[] = {"sfp_ak5dmk2"};	//AK5D "kort ak5C"
-    attachment[] = {};
-    magazines[] =
-    {
-        LIST_2("rhsusf_mag_17Rnd_9x19_JHP"),
-		LIST_4("sfp_30Rnd_556x45_Stanag"),
-		"sam_hgr90",
-		"sam_rhgr5"
-    };
-    items[] += 
-    {
-        "rhsusf_ANPVS_15",	//Nightvision
-		"G_Combat",	//Stridsglasögon 
-		"ACE_key_lockpick"
-    };
+    	displayName = "Vagnchef";
+     	uniform[] = {"sfp_m90p_uniform"};
+      vest[] = {"sfp_kroppsskydd94"};
+      backpack[] = {};
+      headgear[] = {"rhsusf_cvc_green_ess"};
+    	primaryWeapon[] = {"sfp_ak5dmk2"};
+    	attachment[] = {};
+    	magazines[] = {
+          LIST_2("rhsusf_mag_17Rnd_9x19_JHP"),
+		      LIST_4("sfp_30Rnd_556x45_Stanag"),
+		      "sam_hgr90",
+		      "sam_rhgr5"
+      };
+    	items[] += {
+        	"rhsusf_ANPVS_15",
+		      "G_Combat",
+		    "ACE_key_lockpick"
+    	};
 	backpackItems[] = {};
 };
+
+
 class vagnsbes : vc {											//Vagnsbesättning
-    displayName = "Vagnsbesättning";
-       headgear[] = {"H_HelmetCrew_I"};
+    	displayName = "Vagnsbesättning";
+       	headgear[] = {"H_HelmetCrew_I"};
 };
-class pilot {												//Pilot
-    displayName = "Pilot";
-     uniform[] = {"U_I_pilotCoveralls"};
-       vest[] = {};
-       backpack[] = {};
-       headgear[] = {"H_CrewHelmetHeli_B"};
-       goggles[] = {};
-       hmd[] = {};
-    primaryWeapon[] = {};
-    scope[] = {};
-    bipod[] = {};
-    attachment[] = {};
-    silencer[] = {};
-    secondaryWeapon[] = {};
-    secondaryAttachments[] = {};
-    sidearmWeapon[] = {"rhsusf_weap_glock17g4"};
-    sidearmAttachments[] = {};
-    magazines[] =
-    {
-        LIST_2("rhsusf_mag_17Rnd_9x19_JHP")
-    };
-    items[] = 
-    {
-        "ACE_EarPlugs",
-		LIST_2("ACE_fieldDressing"),
-		"ACE_tourniquet",
-		"ACRE_PRC148",
-		"ACE_Flashlight_KSF1",
-		"G_Aviator",	//Glasögon
-		"rhsusf_ANPVS_15",	//Nightvision
-		"ACE_key_lockpick",
-		"ACE_IR_Strobe_Item"
-    };
-    linkedItems[] = {
-        "ItemMap",
-        "ItemCompass",
-		"ItemRadio",
-        "ItemWatch"
-    };
+
+class pilot {
+    	displayName = "Pilot";
+     	uniform[] = {"U_I_pilotCoveralls"};
+      vest[] = {};
+      backpack[] = {};
+      headgear[] = {"H_CrewHelmetHeli_B"};
+      goggles[] = {};
+      hmd[] = {};
+    	primaryWeapon[] = {};
+    	scope[] = {};
+    	bipod[] = {};
+    	attachment[] = {};
+    	silencer[] = {};
+    	secondaryWeapon[] = {};
+    	secondaryAttachments[] = {};
+    	sidearmWeapon[] = {"rhsusf_weap_glock17g4"};
+    	sidearmAttachments[] = {};
+    	magazines[] = {
+        	LIST_2("rhsusf_mag_17Rnd_9x19_JHP")
+    	};
+    	items[] =  {
+
+
+          "ACE_EarPlugs",
+		      LIST_2("ACE_fieldDressing"),
+		      "ACE_tourniquet",
+		      "ACRE_PRC148",
+		      "ACE_Flashlight_KSF1",
+		      "G_Aviator",	//Glasögon
+		      "rhsusf_ANPVS_15",	//Nightvision
+		      "ACE_key_lockpick",
+		      "ACE_IR_Strobe_Item"
+    	};
+      
+    	linkedItems[] = {
+        	"ItemMap",
+        	"ItemCompass",
+		      "ItemRadio",
+        	"ItemWatch"
+    	};
 };
+
+
 class fac : soldat {										//FAC (forward air controller)
-    displayName = "Forward Air Controller";
-    linkedItems[] += 
-	{
-        "ACE_Vector",
-		"ACE_microDAGR"
-    };
+    	displayName = "Forward Air Controller";
+    	linkedItems[] += {
+        	"ACE_Vector",
+		      "ACE_microDAGR"
+    	};
 	radios[] += {"ACRE_PRC117F"};
 };
+
+
 class GSU {											//GSU 
-    displayName = "GSU";
-    // All randomized.
-     uniform[] = {"sfp_m90_BasicBody"};
-       vest[] = {};
-       backpack[] = {};
-       headgear[] = {};
-       goggles[] = {};
-       hmd[] = {};
-    primaryWeapon[] = {};
-    scope[] = {};
-    bipod[] = {};
-    attachment[] = {};
-    silencer[] = {};
-    secondaryWeapon[] = {};
-    secondaryAttachments[] = {};
-    sidearmWeapon[] = {};
-    sidearmAttachments[] = {};
-    magazines[] = {};
-    items[] = {};
-    linkedItems[] = {};
-    backpackItems[] = {};
-    radios[] = {};
+    	displayName = "GSU";
+    	// All randomized.
+     	uniform[] = {"sfp_m90_BasicBody"};
+       	vest[] = {};
+       	backpack[] = {};
+       	headgear[] = {};
+       	goggles[] = {};
+       	hmd[] = {};
+    	primaryWeapon[] = {};
+    	scope[] = {};
+    	bipod[] = {};
+    	attachment[] = {};
+    	silencer[] = {};
+    	secondaryWeapon[] = {};
+    	secondaryAttachments[] = {};
+    	sidearmWeapon[] = {};
+    	sidearmAttachments[] = {};
+    	magazines[] = {};
+    	items[] = {};
+    	linkedItems[] = {};
+    	backpackItems[] = {};
+    	radios[] = {};
 };
+
 class civil {											//Civila
-    displayName = "Civil";
-    	
-	//Slumpgenerator för Civil Gear
-	//Tomma slots ("") betyder att AIn inte får utrustning.
-    	//Array med uinformer AI kan använda
-     uniform[] = {"CUP_U_I_GUE_Anorak_01","CUP_U_I_GUE_Anorak_03","U_I_C_Soldier_Bandit_2_F","U_I_C_Soldier_Bandit_3_F","sfp_criminal_uniform1","sfp_criminal_uniform2","U_C_Man_casual_2_F","U_C_Man_casual_3_F","U_C_Man_casual_1_F","CUP_U_O_CHDKZ_Lopotev","CUP_U_C_Citizen_04","CUP_U_C_Citizen_03","U_I_G_resistanceLeader_F","U_C_ConstructionCoverall_Red_F","CUP_U_C_Fireman_01","U_BG_Guerilla2_2","U_BG_Guerilla3_1","U_C_HunterBody_grn","CUP_U_C_Labcoat_02","U_Marshal","U_C_Mechanic_01_F","CUP_U_C_Mechanic_01","CUP_U_C_Rescuer_01","CUP_I_B_PMC_Unit_2","CUP_U_C_Profiteer_02","CUP_U_C_Rocker_01","CUP_U_C_Rocker_03","CUP_U_C_Rocker_02","CUP_U_C_Rocker_04","CUP_U_C_Villager_01","CUP_U_C_Villager_02","CUP_U_C_Villager_03"};
-       vest[] = {};
-       
-       //Array med uinformer AI kan använda
-       backpack[] = {"B_Messenger_Black_F","B_Messenger_Coyote_F","B_Messenger_Gray_F","","","","","","",""};
-       
-      	//Array med uinformer AI kan använda
-       headgear[] = {"H_Watchcap_blk","CUP_H_C_Beanie_01","H_Cap_blk","CUP_H_C_MAGA_01","CUP_H_PMC_Cap_Back_Grey","H_Hat_brown","H_StrawHat_dark","H_WirelessEarpiece_F","","","","","","","","","","","","","","","","","","","","","","","","","","","",""};
+    	displayName = "Civil";
       
       //Array med uinformer AI kan använda
-       goggles[] = {"G_Aviator","G_Bandanna_sport","G_Shades_Red","G_Spectacles","","","","","","","","","","","","","",""};
-     
-     hmd[] = {};
-    primaryWeapon[] = {};
-    scope[] = {};
-    bipod[] = {};
-    attachment[] = {};
-    silencer[] = {};
-    secondaryWeapon[] = {};
-    secondaryAttachments[] = {};
-    sidearmWeapon[] = {"rhsusf_weap_glock17g4"};
-    sidearmAttachments[] = {};
-    magazines[] =
-    {
-        LIST_2("rhsusf_mag_17Rnd_9x19_JHP")
-    };
-    items[] = {};
-    linkedItems[] = {
-        "ItemMap",
-        "ItemCompass",
+     	uniform[] = {"CUP_U_I_GUE_Anorak_01","CUP_U_I_GUE_Anorak_03","U_I_C_Soldier_Bandit_2_F","U_I_C_Soldier_Bandit_3_F","sfp_criminal_uniform1","sfp_criminal_uniform2","U_C_Man_casual_2_F","U_C_Man_casual_3_F","U_C_Man_casual_1_F","CUP_U_O_CHDKZ_Lopotev","CUP_U_C_Citizen_04","CUP_U_C_Citizen_03","U_I_G_resistanceLeader_F","U_C_ConstructionCoverall_Red_F","CUP_U_C_Fireman_01","U_BG_Guerilla2_2","U_BG_Guerilla3_1","U_C_HunterBody_grn","CUP_U_C_Labcoat_02","U_Marshal","U_C_Mechanic_01_F","CUP_U_C_Mechanic_01","CUP_U_C_Rescuer_01","CUP_I_B_PMC_Unit_2","CUP_U_C_Profiteer_02","CUP_U_C_Rocker_01","CUP_U_C_Rocker_03","CUP_U_C_Rocker_02","CUP_U_C_Rocker_04","CUP_U_C_Villager_01","CUP_U_C_Villager_02","CUP_U_C_Villager_03"};
+       	vest[] = {};
+       	backpack[] = {
+		          "B_Messenger_Black_F",
+		          "B_Messenger_Coyote_F",
+		          "B_Messenger_Gray_F",
+		           "","","","","","",""
+		};
+		 	  //Array med Headgear AI kan använda
+       	headgear[] = {
+		          "H_Watchcap_blk",
+		          "CUP_H_C_Beanie_01",
+		          "H_Cap_blk",
+		          "CUP_H_C_MAGA_01",
+		          "CUP_H_PMC_Cap_Back_Grey",
+		          "H_Hat_brown",
+		          "H_StrawHat_dark",
+		          "H_WirelessEarpiece_F",
+		          "","","","","","","","","","","","","","","","","","","","","","","","","","","",""
+		    };
+        
+		 	//Array med Glasögon/faceSlot AI kan använda
+       	goggles[] = {
+		          "G_Aviator",
+		          "G_Bandanna_sport",
+		          "G_Shades_Red",
+		          "G_Spectacles"
+		          ,"","","","","","","","","","","","","",""
+		};
+      hmd[] = {};
+    	primaryWeapon[] = {};
+    	scope[] = {};
+    	bipod[] = {};
+    	attachment[] = {};
+    	silencer[] = {};
+    	secondaryWeapon[] = {};
+    	secondaryAttachments[] = {};
+    	sidearmWeapon[] = {"rhsusf_weap_glock17g4"};
+    	sidearmAttachments[] = {};
+    	magazines[] =
+    	{
+        	LIST_2("rhsusf_mag_17Rnd_9x19_JHP")
+    	};
+    	items[] = {};
+    	linkedItems[] = {
+        	"ItemMap",
+        	"ItemCompass",
+
 		"ItemRadio",
-        "ItemWatch"
-    };
-    backpackItems[] = {
+        	"ItemWatch"
+    	};
+    	backpackItems[] = {
         LIST_2("ACE_fieldDressing"),
         "ACE_morphine"
-    };
+    	};
     radios[] = {};
 };
