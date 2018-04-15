@@ -1,7 +1,7 @@
 /* assignGear specific macros */
 
 
-class soldat{                          //Soldat
+class soldat{                         								//Soldat
 	displayName = "Skyttesoldat";
 
 	// All randomized.
@@ -79,7 +79,7 @@ class soldat{                          //Soldat
 	radios[] = { "ACRE_PRC343" };
 };
 
-class grpc : soldat                     //Gruppchef
+class grpc : soldat                     							//Gruppchef
 
 {
 	displayName = "Gruppchef";
@@ -109,13 +109,13 @@ class grpc : soldat                     //Gruppchef
 	};
 };
 
-class stfgrpc : grpc {                      //ställföreträdande gruppchef
+class stfgrpc : grpc {                      							//ställföreträdande gruppchef
 	displayName = "Stf gruppchef";
 
 };
 
 class plutc : grpc {
-	displayName = "Plutonchef";				//Plutonchef
+	displayName = "Plutonchef";								//Plutonchef
 	linkedItems[] += {
 		"ItemGPS",
 	};
@@ -152,12 +152,12 @@ class kompc : soldat                      //Kompanichef
 	};
 };
 
-class stfkompc : kompc {                    //Ställföreträdande Kompanichef ärver gear from Kompanichef
+class stfkompc : kompc {                    							//Ställföreträdande Kompanichef ärver gear from Kompanichef
 	displayName = "Stf kompanichef";
 };
 
 class sjv : soldat {
-	displayName = "Sjukvårdare";          // sjukårdare
+	displayName = "Sjukvårdare";          							// sjukårdare
 	backpack[] = { "SAM_Kitbag_rgr_med" };
 	primaryWeapon[] = { "sfp_ak5c" };
 	items[] +=
@@ -179,7 +179,7 @@ class sjv : soldat {
 	};
 };
 
-class ksp90 : soldat {                        //Soldat KSP90
+class ksp90 : soldat {                        							//Soldat KSP90
 	displayName = "Kulspruteskytt 90";
 	backpack[] = { "SAM_Kitbag_rgr" };
 	primaryWeapon[] = { "rhs_weap_m249_pip_S_para" };
@@ -198,7 +198,7 @@ class ksp90 : soldat {                        //Soldat KSP90
 };
 
 
-class ksp58 : soldat {                      //Soldat KSP58
+class ksp58 : soldat {                      							//Soldat KSP58
 	displayName = "Kulspruteskytt 58";
 	backpack[] = { "SAM_Kitbag_rgr" };
 	primaryWeapon[] = { "SAM_KSP58B2" };
@@ -217,7 +217,7 @@ class ksp58 : soldat {                      //Soldat KSP58
 };
 
 
-class farb : soldat {                     //Fältarbetare
+class farb : soldat {                     							//Fältarbetare
 	displayName = "Fältarbetare";
 	backpack[] = { "SAM_Kitbag_rgr_eng" };
 	primaryWeapon[] = { "sfp_ak5c" };
@@ -245,7 +245,7 @@ class farb : soldat {                     //Fältarbetare
 };
 
 
-class robot : soldat {                      //Robotskytt
+class robot : soldat {                     							//Robotskytt
 	displayName = "Robotskytt";
 	primaryWeapon[] = { "sfp_ak5c_alt","sfp_ak5c" };
 	secondaryWeapon[] = { "launch_NLAW_F" };
@@ -268,12 +268,12 @@ class grkplutc : grpc {
 };
 
 
-class pjasc : grkplutc {                    //GRK gruppchef
+class pjasc : grkplutc {                    							//GRK gruppchef
 
 	displayName = "Pjäsgruppchef";
 };
 
-class grk : soldat {						//GRK soldat
+class grk : soldat {										//GRK soldat
 	displayName = "GRK-soldat";
 	items[] +=
 	{
@@ -282,7 +282,7 @@ class grk : soldat {						//GRK soldat
 };
 
 
-class mekaniker : soldat {                    //Mekaniker
+class mekaniker : soldat {                   							//Mekaniker
 	displayName = "Mekaniker";
 	items[] +=
 	{
@@ -291,7 +291,7 @@ class mekaniker : soldat {                    //Mekaniker
 };
 
 
-class suavgrpc : soldat											//SUAV Gruppchef 
+class suavgrpc : soldat										//SUAV Gruppchef 
 
 {
 	displayName = "SUAV-gruppchef";
@@ -321,7 +321,7 @@ class suavgrpc : soldat											//SUAV Gruppchef
 };
 
 
-class uav : soldat {											//SUAV Pilot "borde heta SUAV"
+class uav : soldat {										//SUAV Pilot "borde heta SUAV"
 	displayName = "SUAV-pilot";
 	backpack[] = { "B_UAV_06_backpack_F" };
 	items[] +=
@@ -334,7 +334,7 @@ class uav : soldat {											//SUAV Pilot "borde heta SUAV"
 };
 
 
-class prsk : soldat {											//Prickskytt 
+class prsk : soldat {										//Prickskytt 
 	displayName = "Prickskytt";
 	// All randomized.
 	uniform[] = { "SAM_Crye_M90_ghillie" };
@@ -361,7 +361,7 @@ class prsk : soldat {											//Prickskytt
 };
 
 
-class obs : soldat {											//Observatör
+class obs : soldat {										//Observatör
 	displayName = "Observatör";
 	uniform[] = { "SAM_Crye_M90_ghillie" };
 	backpack[] = { "SAM_Kitbag_rgr_eng" };
@@ -384,7 +384,7 @@ class obs : soldat {											//Observatör
 };
 
 
-class vc : soldat {											//Vagnchef
+class vc : soldat {										//Vagnchef
 	displayName = "Vagnchef";
 	uniform[] = { "sfp_m90p_uniform" };
 	vest[] = { "sfp_kroppsskydd94" };
@@ -407,7 +407,7 @@ class vc : soldat {											//Vagnchef
 };
 
 
-class vagnsbes : vc {											//Vagnsbesättning
+class vagnsbes : vc {										//Vagnsbesättning
 	displayName = "Vagnsbesättning";
 	headgear[] = { "H_HelmetCrew_I" };
 };
