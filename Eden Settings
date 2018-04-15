@@ -1,18 +1,18 @@
-// ACE Advanced Ballistics
-force ace_advanced_ballistics_ammoTemperatureEnabled = true;
-force ace_advanced_ballistics_barrelLengthInfluenceEnabled = true;
-force ace_advanced_ballistics_bulletTraceEnabled = true;
+// ACE Advanced Ballistics                Helt avstängt pga prestanda 
+force ace_advanced_ballistics_ammoTemperatureEnabled = false;   // från true till false 
+force ace_advanced_ballistics_barrelLengthInfluenceEnabled = false;  // från true till false 
+force ace_advanced_ballistics_bulletTraceEnabled = false;  // från true till false 
 force ace_advanced_ballistics_enabled = false;
-force ace_advanced_ballistics_muzzleVelocityVariationEnabled = true;
+force ace_advanced_ballistics_muzzleVelocityVariationEnabled = false;  // från true till false 
 force ace_advanced_ballistics_simulationInterval = 0.05;
 
-// ACE Advanced Fatigue
-force ace_advanced_fatigue_enabled = true;
-force ace_advanced_fatigue_enableStaminaBar = true;
-force ace_advanced_fatigue_loadFactor = 1.4873;
-force ace_advanced_fatigue_performanceFactor = 4.49532;
-force ace_advanced_fatigue_recoveryFactor = 5;
-force ace_advanced_fatigue_terrainGradientFactor = 1.4873;
+// ACE Advanced Fatigue       https://ace3mod.com/wiki/framework/advanced-fatigue-framework.html
+force ace_advanced_fatigue_enabled = true;               //STD True,
+force ace_advanced_fatigue_enableStaminaBar = true;      //STD True, 
+force ace_advanced_fatigue_loadFactor = 1.4873;          //STD 1.2,
+force ace_advanced_fatigue_performanceFactor = 1.5;      //STD 1, Bytt till 1.5 från 5
+force ace_advanced_fatigue_recoveryFactor = 4;           //STD 4, bytt från 5 till 4
+force ace_advanced_fatigue_terrainGradientFactor = 1.4873;  //STD 1.2,
 
 // ACE Advanced Throwing
 force ace_advanced_throwing_enabled = true;
@@ -238,7 +238,7 @@ force ace_finger_maxRange = 7;
 force ace_pylons_enabled = true;
 force ace_pylons_rearmNewPylons = false;
 force ace_pylons_requireEngineer = false;
-force ace_pylons_requireToolkit = true;
+force ace_pylons_requireToolkit = false; // från true till false 
 force ace_pylons_searchDistance = 15;
 force ace_pylons_timePerPylon = 5;
 
@@ -336,7 +336,7 @@ force ace_ui_zeroing = true;
 // ACE Vehicle Lock
 force ace_vehiclelock_defaultLockpickStrength = 60;
 force ace_vehiclelock_lockVehicleInventory = true;
-force ace_vehiclelock_vehicleStartingLockState = -1;
+force ace_vehiclelock_vehicleStartingLockState = -1; //TODO ska ändras
 
 // ACE View Distance Limiter
 ace_viewdistance_enabled = false;
