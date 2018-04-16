@@ -93,6 +93,7 @@ class grpc : soldat                     							//Gruppchef
 	};
 
 	backpackItems[] += {
+		"Binocular",
 		LIST_2("1Rnd_Smoke_Grenade_shell"),
 		LIST_2("1Rnd_SmokeRed_Grenade_shell"),
 		LIST_2("1Rnd_SmokeGreen_Grenade_shell"),
