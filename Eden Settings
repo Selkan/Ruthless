@@ -8,9 +8,9 @@ force ace_advanced_ballistics_simulationInterval = 0.05;
 
 // ACE Advanced Fatigue       https://ace3mod.com/wiki/framework/advanced-fatigue-framework.html
 force ace_advanced_fatigue_enabled = true;               //STD True,
-force ace_advanced_fatigue_enableStaminaBar = true;      //STD True, 
+force ace_advanced_fatigue_enableStaminaBar = false;     //STD True, 
 force ace_advanced_fatigue_loadFactor = 1.2;             //STD 1.2,
-force ace_advanced_fatigue_performanceFactor = 1.5;      //STD 1, Bytt till 1.5 från 5
+force ace_advanced_fatigue_performanceFactor = 5;      //STD 1, Bytt till 5
 force ace_advanced_fatigue_recoveryFactor = 4;           //STD 4, bytt från 5 till 4
 force ace_advanced_fatigue_terrainGradientFactor = 1.2;  //STD 1.2,
 
