@@ -1,18 +1,18 @@
-// ACE Advanced Ballistics                Helt avstängt pga prestanda 
-force ace_advanced_ballistics_ammoTemperatureEnabled = false;   // från true till false 
-force ace_advanced_ballistics_barrelLengthInfluenceEnabled = false;  // från true till false 
-force ace_advanced_ballistics_bulletTraceEnabled = false;  // från true till false 
+// ACE Advanced Ballistics
+force ace_advanced_ballistics_ammoTemperatureEnabled = false;
+force ace_advanced_ballistics_barrelLengthInfluenceEnabled = false;
+force ace_advanced_ballistics_bulletTraceEnabled = false;
 force ace_advanced_ballistics_enabled = false;
-force ace_advanced_ballistics_muzzleVelocityVariationEnabled = false;  // från true till false 
+force ace_advanced_ballistics_muzzleVelocityVariationEnabled = false;
 force ace_advanced_ballistics_simulationInterval = 0.05;
 
-// ACE Advanced Fatigue       https://ace3mod.com/wiki/framework/advanced-fatigue-framework.html
-force ace_advanced_fatigue_enabled = true;               //STD True,
-force ace_advanced_fatigue_enableStaminaBar = false;     //STD True, 
-force ace_advanced_fatigue_loadFactor = 1.2;             //STD 1.2,
-force ace_advanced_fatigue_performanceFactor = 5;      //STD 1, Bytt till 5
-force ace_advanced_fatigue_recoveryFactor = 4;           //STD 4, bytt från 5 till 4
-force ace_advanced_fatigue_terrainGradientFactor = 1.2;  //STD 1.2,
+// ACE Advanced Fatigue
+force ace_advanced_fatigue_enabled = true;
+force ace_advanced_fatigue_enableStaminaBar = false;
+force ace_advanced_fatigue_loadFactor = 1;
+force ace_advanced_fatigue_performanceFactor = 5;
+force ace_advanced_fatigue_recoveryFactor = 4;
+force ace_advanced_fatigue_terrainGradientFactor = 1;
 
 // ACE Advanced Throwing
 force ace_advanced_throwing_enabled = true;
@@ -81,7 +81,7 @@ force ace_hearing_unconsciousnessVolume = 0.4;
 // ACE Interaction
 force ace_interaction_disableNegativeRating = false;
 force ace_interaction_enableMagazinePassing = true;
-force ace_interaction_enableTeamManagement = false;
+force ace_interaction_enableTeamManagement = true;
 
 // ACE Interaction Menu
 ace_gestures_showOnInteractionMenu = 2;
@@ -162,12 +162,12 @@ force ace_medical_delayUnconCaptive = 3;
 force ace_medical_enableAdvancedWounds = true;
 force ace_medical_enableFor = 0;
 force ace_medical_enableOverdosing = true;
-force ace_medical_enableRevive = 2;
+force ace_medical_enableRevive = 1;
 force ace_medical_enableScreams = true;
-force ace_medical_enableUnconsciousnessAI = 2;
+force ace_medical_enableUnconsciousnessAI = 0;
 force ace_medical_enableVehicleCrashes = true;
 force ace_medical_healHitPointAfterAdvBandage = false;
-force ace_medical_increaseTrainingInLocations = true;
+force ace_medical_increaseTrainingInLocations = false;
 force ace_medical_keepLocalSettingsSynced = true;
 force ace_medical_level = 2;
 force ace_medical_litterCleanUpDelay = 30;
@@ -183,7 +183,7 @@ force ace_medical_menu_openAfterTreatment = true;
 force ace_medical_menu_useMenu = 1;
 force ace_medical_menuTypeStyle = 0;
 force ace_medical_moveUnitsFromGroupOnUnconscious = true;
-force ace_medical_painCoefficient = 6.04389;
+force ace_medical_painCoefficient = 2.98016;
 force ace_medical_painEffectType = 1;
 force ace_medical_painIsOnlySuppressed = true;
 force ace_medical_playerDamageThreshold = 19.9699;
@@ -209,7 +209,7 @@ force ace_nametags_showCursorTagForVehicles = true;
 force ace_nametags_showNamesForAI = false;
 force ace_nametags_showPlayerNames = 1;
 force ace_nametags_showPlayerRanks = false;
-force ace_nametags_showSoundWaves = 0;
+force ace_nametags_showSoundWaves = 1;
 force ace_nametags_showVehicleCrewInfo = true;
 force ace_nametags_tagSize = 2;
 
@@ -238,7 +238,7 @@ force ace_finger_maxRange = 7;
 force ace_pylons_enabled = true;
 force ace_pylons_rearmNewPylons = false;
 force ace_pylons_requireEngineer = false;
-force ace_pylons_requireToolkit = false; // från true till false 
+force ace_pylons_requireToolkit = false;
 force ace_pylons_searchDistance = 15;
 force ace_pylons_timePerPylon = 5;
 
@@ -287,7 +287,7 @@ force ace_switchunits_switchToWest = false;
 force ace_tagging_quickTag = 1;
 
 // ACE Uncategorized
-force ace_gforces_enabledFor = 1;
+force ace_gforces_enabledFor = 0;
 force ace_hitreactions_minDamageToTrigger = 0.1;
 force ace_inventory_inventoryDisplaySize = 0;
 force ace_laser_dispersionCount = 2;
@@ -336,7 +336,7 @@ force ace_ui_zeroing = true;
 // ACE Vehicle Lock
 force ace_vehiclelock_defaultLockpickStrength = 60;
 force ace_vehiclelock_lockVehicleInventory = true;
-force ace_vehiclelock_vehicleStartingLockState = -1; //TODO ska ändras
+force ace_vehiclelock_vehicleStartingLockState = -1;
 
 // ACE View Distance Limiter
 ace_viewdistance_enabled = false;
