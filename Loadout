@@ -81,7 +81,7 @@ class grpc : soldat
 		LIST_4("1Rnd_HE_Grenade_shell")
     };
 	linkedItems[] += {
-		"Binoculars",
+		"Binocular",
     };
     backpackItems[] += {
         LIST_2("1Rnd_Smoke_Grenade_shell"),
