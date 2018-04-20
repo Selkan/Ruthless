@@ -50,6 +50,7 @@ class soldat{                         								//Soldat
 		"ACE_EarPlugs",
 		LIST_2("ACE_fieldDressing"),
 		"ACE_tourniquet",
+		"ACE_quikclot",
 		"ACE_Flashlight_KSF1",
 		"ACE_IR_Strobe_Item"
 	};
@@ -85,6 +86,7 @@ class grpc : soldat                     							//Gruppchef
 	displayName = "Gruppchef";
 	backpack[] = { "SAM_Kitbag_rgr" };
 	primaryWeapon[] = { "sfp_ak5c_m203" };
+	linkedItems[] += {"Binocular"};
 	items[] +=
 	{
 		"ACRE_PRC148",
@@ -125,6 +127,7 @@ class stfplutc : plutc {
 	displayName = "Stf plutonchef";
 	linkedItems[] += {
 		"ItemGPS",
+		"ACE_Vector",
 	};
 };
 
