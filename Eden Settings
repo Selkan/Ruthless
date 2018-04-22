@@ -287,7 +287,7 @@ force ace_switchunits_switchToWest = false;
 force ace_tagging_quickTag = 1;
 
 // ACE Uncategorized
-force ace_gforces_enabledFor = 1;
+force ace_gforces_enabledFor = 0;             //Byta till 1 till 0 tills vidare
 force ace_hitreactions_minDamageToTrigger = 0.1;
 force ace_inventory_inventoryDisplaySize = 0;
 force ace_laser_dispersionCount = 2;
