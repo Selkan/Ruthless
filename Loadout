@@ -49,7 +49,7 @@ class soldat {
     linkedItems[] = {
         "ItemMap",
         "ItemCompass",
-	"ItemRadio",
+		"ItemRadio",
         "ItemWatch"
     };
 
@@ -73,7 +73,7 @@ class grpc : soldat
 {
     displayName = "Gruppchef";
     backpack[] = {"SAM_Kitbag_rgr"};
-    primaryWeapon[] = {"sfp_ak5c_m203"};
+	primaryWeapon[] = {"sfp_ak5c_m203"};
     items[] +=
     {
         "ACRE_PRC148",
@@ -81,7 +81,7 @@ class grpc : soldat
 		LIST_4("1Rnd_HE_Grenade_shell")
     };
 	linkedItems[] += {
-		"Binocular",
+		"Binocular"
     };
     backpackItems[] += {
         LIST_2("1Rnd_Smoke_Grenade_shell"),
@@ -198,23 +198,21 @@ class farb : soldat {
 	primaryWeapon[] = {"sfp_ak5c"};
     items[] += 
     {
-		"ACE_Clacker"
+		"ACE_M26_Clacker"
     };
     backpackItems[] += {
         "sfp_optic_3x_aimpoint",
 		LIST_2("ClaymoreDirectionalMine_Remote_Mag"),
-		LIST_3("SLAMDirectionalMine_Wire_Mag"),
-		"sfp_sprdeg46_mag",
+		LIST_2("SLAMDirectionalMine_Wire_Mag"),
+		LIST_8("sfp_sprdeg46_mag"),
 		"ACE_SpraypaintBlue",
 		"ACE_SpraypaintGreen",
 		"ACE_SpraypaintRed",
 		"ACE_DefusalKit",
-		"MineDetector",
-		LIST_4("Chemlight_green"),
-		LIST_4("Chemlight_blue"),
-		LIST_4("Chemlight_yellow"),
-		LIST_4("Chemlight_red"),
-		"ACE_wirecutter"
+		"ACE_VMH3",
+		LIST_2("Chemlight_green"),
+		LIST_2("Chemlight_blue"),
+		LIST_2("Chemlight_red")
     };
 };
 class robot : soldat {
@@ -282,11 +280,6 @@ class suavgrpc : soldat
 class uav : soldat {
     displayName = "SUAV-pilot";
        backpack[] = {"B_UAV_06_backpack_F"};
-    items[] +=
-    {
-		"SAM_HelmetIA_M90",
-		"rhsusf_ANPVS_15",
-    };
 	backpackItems[] = {"Default"};
     radios[] += {"ACRE_PRC152"};
 };
@@ -365,7 +358,7 @@ class pilot {
     displayName = "Pilot";
      uniform[] = {"U_I_pilotCoveralls"};
        vest[] = {};
-       backpack[] = {};
+       backpack[] = {"sfp_stridssele_backpack"};
        headgear[] = {"H_CrewHelmetHeli_B"};
        goggles[] = {};
        hmd[] = {};
@@ -408,7 +401,6 @@ class fac : soldat {
         "ACE_Vector",
 		"ACE_microDAGR"
     };
-	radios[] += {"ACRE_PRC117F"};
 };
 class GSU {
     displayName = "GSU";
