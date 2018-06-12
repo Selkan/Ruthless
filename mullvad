@@ -1,0 +1,134 @@
+
+if(isDedicated) exitWith{};
+
+waitUntil{!isNil "MOLE_INIT"};
+waitUntil{MOLE_INIT};
+
+WEAPS   = [];
+PWITEMS = [];
+SWITEMS = [];
+HGITEMS = [];
+MAGS    = [];
+PITEMS  = [];
+APITEMS = [];
+BPACK   = "";
+
+_saveGear = {
+	WEAPS   = weapons player;
+	PWITEMS = primaryWeaponItems player;
+	SWITEMS = secondaryWeaponItems player;
+	HGITEMS = handgunItems player;
+	MAGS    = magazines player;
+	PITEMS  = items player;
+	APITEMS = assignedItems player;
+	BPACK   = backpack player;
+};
+
+_removeGear = {
+	removeAllAssignedItems player;
+	removeAllItems player;
+	removeAllWeapons player;
+	removeBackpack player;
+};
+
+_loadGear = {
+	if(BPACK != "") then{player addBackpack BPACK;};
+	{player addMagazine _x}forEach MAGS;
+	{player addWeapon _x}forEach WEAPS;
+	{player addPrimaryWeaponItem _x}forEach PWITEMS;
+	{player addSecondaryWeaponItem _x}forEach SWITEMS;
+	{player addItem _x; player assignItem _x;}forEach APITEMS;
+};
+
+_disableDamage = {
+	_index = player addEventHandler["handleDamage",{ false }];
+	_index	
+};
+_enableDamage = {
+	_index = _this select 0;
+	player removeEventHandler ["handleDamage",_index];	
+};
+
+
+_tetherdistance = 20;
+_sign = 1;
+
+while{true} do{
+
+	switch(side player) do{
+
+		case WEST: {
+			if(WEST_ACCUSED_MOLE) then{
+				if(getPlayerUID player == getPlayerUID WEST_ACCUSED) then{
+					//detain
+					player sidechat format["Du anklagades av %1",name WEST_ACCUSER];
+					player removeAction mole_menu;
+					//player removeAction act_detain;
+					//player removeAction act_release;
+					[] call _saveGear;
+					[] call _removeGear;
+					_index = [] call _disableDamage;
+
+					_pos = getPosATL WEST_ACCUSER;
+					while{WEST_ACCUSED_MOLE} do{
+						removeAllWeapons player;
+						if(alive WEST_ACCUSER) then{_pos = getPosATL WEST_ACCUSER;};
+						if(player distance WEST_ACCUSER > _tetherdistance) then{
+							if(random 1 > 0.5) then{_sign = -1;}else{_sign = 1;};
+							player setPosATL [(_pos select 0) + (_sign * (random 2)),
+   											  (_pos select 1) + (_sign * (random 2)),
+   											  (_pos select 2)];
+						};
+						sleep 1;
+					};
+
+					//release
+					player sidechat format["Du friades av %1",name WEST_RELEASER];
+					[] call _loadGear;
+					["lol"] spawn MOLE_fnc_moleMenu;
+					[_index] call _enableDamage;
+
+					WEST_RELEASER = nil;
+					publicVariable "WEST_RELEASER";
+				};
+			};
+		};
+		case EAST: {
+			if(EAST_ACCUSED_MOLE) then{
+				if(getPlayerUID player == getPlayerUID EAST_ACCUSED) then{
+					//detain
+					player sidechat format["Du anklagades av %1",name EAST_ACCUSER];
+					player removeAction mole_menu;
+					[] call _saveGear;
+					[] call _removeGear;
+					_index = [] call _disableDamage;
+
+					_pos = getPosATL EAST_ACCUSER;
+					while{EAST_ACCUSED_MOLE} do{
+						removeAllWeapons player;
+						if(alive EAST_ACCUSER) then{_pos = getPosATL EAST_ACCUSER;};
+							if(player distance EAST_ACCUSER > _tetherdistance) then{
+								if(random 1 > 0.5) then{_sign = -1;}else{_sign = 1;};
+								player setPosATL [(_pos select 0) + (_sign * (random 2)),
+												  (_pos select 1) + (_sign * (random 2)),
+												  (_pos select 2)];
+							};
+						sleep 1;
+					};
+
+					//release
+					player sidechat format["Du friades av %1",name EAST_RELEASER];
+					[] call _loadGear;
+					["lol"] spawn MOLE_fnc_moleMenu;
+					[_index] call _enableDamage;
+
+					EAST_RELEASER = nil;
+					publicVariable "EAST_RELEASER";
+				};
+			};
+		};
+	sleep 1;
+};
+
+//WEST_ACCUSED_MOLE = True; WEST_ACCUSED = player; WEST_ACCUSER = p2; WEST_RELEASER = p2;
+//WEST_ACCUSED_MOLE = False; WEST_ACCUSED = nil; WEST_ACCUSER = nil; 
