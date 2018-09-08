@@ -99,7 +99,7 @@ ace_interact_menu_menuAnimationSpeed = 0;
 ace_interact_menu_menuBackground = 0;
 ace_interact_menu_shadowSetting = 2;
 ace_interact_menu_textSize = 2;
-force force ace_interact_menu_useListMenu = true;
+ace_interact_menu_useListMenu = true;
 
 // ACE Logistics
 force force ace_cargo_enable = true;
@@ -150,21 +150,21 @@ force force ace_maptools_rotateModifierKey = 1;
 
 // ACE Medical
 force force ace_medical_ai_enabledFor = 0;
-force force ace_medical_AIDamageThreshold = 0.5;
+force force ace_medical_AIDamageThreshold = 0.8;
 force force ace_medical_allowLitterCreation = true;
 force force ace_medical_allowUnconsciousAnimationOnTreatment = true;
 force force ace_medical_amountOfReviveLives = -1;
-force force ace_medical_bleedingCoefficient = 0.1;
+force force ace_medical_bleedingCoefficient = 0.5;
 force force ace_medical_blood_enabledFor = 2;
 force force ace_medical_consumeItem_PAK = 0;
 force force ace_medical_consumeItem_SurgicalKit = 0;
 force force ace_medical_delayUnconCaptive = 3;
-force force ace_medical_enableAdvancedWounds = false;
-force force ace_medical_enableFor = 0;
+force force ace_medical_enableAdvancedWounds = true;
+force force ace_medical_enableFor = 1;
 force force ace_medical_enableOverdosing = true;
-force force ace_medical_enableRevive = 1;
+force force ace_medical_enableRevive = 0;
 force force ace_medical_enableScreams = true;
-force force ace_medical_enableUnconsciousnessAI = 0;
+force force ace_medical_enableUnconsciousnessAI = 1;
 force force ace_medical_enableVehicleCrashes = true;
 force force ace_medical_healHitPointAfterAdvBandage = false;
 force force ace_medical_increaseTrainingInLocations = true;
@@ -175,10 +175,10 @@ force force ace_medical_litterSimulationDetail = 2;
 force force ace_medical_maxReviveTime = 900;
 force force ace_medical_medicSetting = 2;
 force force ace_medical_medicSetting_basicEpi = 1;
-force force ace_medical_medicSetting_PAK = 2;
-force force ace_medical_medicSetting_SurgicalKit = 2;
+force force ace_medical_medicSetting_PAK = 1;
+force force ace_medical_medicSetting_SurgicalKit = 1;
 force force ace_medical_menu_allow = 1;
-force force ace_medical_menu_maxRange = 1.52629;
+force force ace_medical_menu_maxRange = 1.5;
 force force ace_medical_menu_openAfterTreatment = true;
 force force ace_medical_menu_useMenu = 1;
 force force ace_medical_menuTypeStyle = 0;
@@ -186,14 +186,14 @@ force force ace_medical_moveUnitsFromGroupOnUnconscious = false;
 force force ace_medical_painCoefficient = 1;
 force force ace_medical_painEffectType = 1;
 force force ace_medical_painIsOnlySuppressed = true;
-force force ace_medical_playerDamageThreshold = 1;
-force force ace_medical_preventInstaDeath = true;
+force force ace_medical_playerDamageThreshold = 5;
+force force ace_medical_preventInstaDeath = false;
 force force ace_medical_remoteControlledAI = true;
 force force ace_medical_useCondition_PAK = 1;
 force force ace_medical_useCondition_SurgicalKit = 1;
 force force ace_medical_useLocation_basicEpi = 0;
 force force ace_medical_useLocation_PAK = 3;
-force force ace_medical_useLocation_SurgicalKit = 3;
+force force ace_medical_useLocation_SurgicalKit = 0;
 
 // ACE Mk6 Mortar
 force force ace_mk6mortar_airResistanceEnabled = true;
@@ -203,7 +203,7 @@ force force ace_mk6mortar_useAmmoHandling = true;
 
 // ACE Name Tags
 force force ace_nametags_defaultNametagColor = [0.77,0.51,0.08,1];
-force ace_nametags_playerNamesMaxAlpha = 0.603832;
+force force ace_nametags_playerNamesMaxAlpha = 0.603832;
 force force ace_nametags_playerNamesViewDistance = 4;
 force force ace_nametags_showCursorTagForVehicles = false;
 force force ace_nametags_showNamesForAI = false;
@@ -214,11 +214,11 @@ ace_nametags_showVehicleCrewInfo = true;
 ace_nametags_tagSize = 2;
 
 // ACE Nightvision
-force force ace_nightvision_aimDownSightsBlur = 0.2;
+force force ace_nightvision_aimDownSightsBlur = 0.7;
 force force ace_nightvision_disableNVGsWithSights = false;
-force force ace_nightvision_effectScaling = 0.2;
-force force ace_nightvision_fogScaling = 0.3;
-force force ace_nightvision_noiseScaling = 0.6;
+force force ace_nightvision_effectScaling = 0.7;
+force force ace_nightvision_fogScaling = 0.7;
+force force ace_nightvision_noiseScaling = 1;
 force force ace_nightvision_shutterEffects = true;
 
 // ACE Overheating
@@ -343,10 +343,10 @@ force force ace_vehiclelock_vehicleStartingLockState = -1;
 force force ace_viewdistance_enabled = false;
 
 // ACE Weapons
-force ace_common_persistentLaserEnabled = true;
-force ace_laserpointer_enabled = true;
-force ace_reload_displayText = false;
-force ace_weaponselect_displayText = true;
+force force ace_common_persistentLaserEnabled = true;
+force force ace_laserpointer_enabled = true;
+force force ace_reload_displayText = false;
+force force ace_weaponselect_displayText = true;
 
 // ACE Weather
 force force ace_weather_enabled = true;
@@ -432,3 +432,24 @@ force force L_Immerse_exShake = true;
 force force L_Immerse_force = true;
 force force L_Immerse_recoil = true;
 force force L_Immerse_twitch = true;
+
+// VCOM SETTINGS
+force force VCM_ActivateAI = true;
+force force VCM_ADVANCEDMOVEMENT = true;
+force force VCM_AIDISTANCEVEHPATH = 100;
+force force VCM_AIMagLimit = 5;
+force force VCM_ARTYDELAY = 5000;
+force force VCM_ARTYENABLE = false;
+force force VCM_ARTYSPREAD = 400;
+force force VCM_Debug = false;
+force force VCM_FRMCHANGE = true;
+force force VCM_HEARINGDISTANCE = 800;
+force force VCM_MINECHANCE = 75;
+force force VCM_RAGDOLL = true;
+force force VCM_RAGDOLLCHC = 50;
+force force VCM_SIDEENABLED = [WEST,EAST,GUER];
+force force VCM_SKILLCHANGE = true;
+force force VCM_STATICARMT = 300;
+force force VCM_StealVeh = false;
+force force VCM_WARNDELAY = 30;
+force force VCM_WARNDIST = 1000;
