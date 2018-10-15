@@ -1,0 +1,50 @@
+//Saker vi kan påverka, tex. med Fältflaskan.
+
+        _patient setVariable ["ACE_MEDICAL_pain", 0, true];
+        _patient setVariable ["ACE_MEDICAL_morphine", 0, true];
+        _patient setVariable ["ACE_MEDICAL_bloodVolume", 100, true];
+        // tourniquets
+        _patient setVariable ["ACE_MEDICAL_tourniquets", [0,0,0,0,0,0], true];
+ 
+        // wounds and injuries
+        _patient setVariable ["ACE_MEDICAL_openWounds", [], true];
+        _patient setVariable ["ACE_MEDICAL_bandagedWounds", [], true];
+        _patient setVariable ["ACE_MEDICAL_internalWounds", [], true];
+   
+        // vitals
+        _patient setVariable ["ACE_MEDICAL_heartRate", 80];
+        _patient setVariable ["ACE_MEDICAL_heartRateAdjustments", []];_patient setVariable ["ACE_MEDICAL_bloodPressure", [80, 120]];
+        _patient setVariable ["ACE_MEDICAL_peripheralResistance", 100];
+ 
+         // fractures
+            _patient setVariable ["ACE_MEDICAL_fractures", []];
+ 
+         // IVs
+         _patient setVariable ["ACE_MEDICAL_ivBags", nil, true];
+ 
+         // damage storage
+        _patient setVariable ["ACE_MEDICAL_bodyPartStatus", [0,0,0,0,0,0], true];
+ 
+            // airway
+         _patient setVariable ["ACE_MEDICAL_airwayStatus", 100, true];
+            _patient setVariable ["ACE_MEDICAL_airwayOccluded", false, true];
+         _patient setVariable ["ACE_MEDICAL_airwayCollapsed", false, true];
+ 
+            // generic medical admin
+            _patient setVariable ["ACE_MEDICAL_addedToUnitLoop", false, true];
+            _patient setVariable ["ACE_MEDICAL_inCardiacArrest", false, true];
+            _patient setVariable ["ACE_MEDICAL_inReviveState", false, true];
+            _patient setVariable ["ACE_isUnconscious", false, true];
+            _patient setVariable ["ACE_MEDICAL_hasLostBlood", 0, true];
+        _patient setVariable ["ACE_MEDICAL_isBleeding", false, true];
+        _patient setVariable ["ACE_MEDICAL_hasPain", false, true];
+        _patient setVariable ["ACE_MEDICAL_painSuppress", 0, true];
+   
+            // medication
+            private _allUsedMedication = _patient getVariable ["ACE_MEDICAL_allUsedMedication", []];
+            {
+            _patient setVariable [_x select 0, nil];
+            } forEach _allUsedMedication;
+   
+            // Resetting damage
+            _patient setDamage 0;
