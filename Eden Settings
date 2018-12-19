@@ -1,17 +1,18 @@
 // ACE Advanced Ballistics
-force force ace_advanced_ballistics_ammoTemperatureEnabled = false;
-force force ace_advanced_ballistics_barrelLengthInfluenceEnabled = false;
-force force ace_advanced_ballistics_bulletTraceEnabled = false;
-force force ace_advanced_ballistics_enabled = false;
-force force ace_advanced_ballistics_muzzleVelocityVariationEnabled = false;
+force force ace_advanced_ballistics_ammoTemperatureEnabled = true;
+force force ace_advanced_ballistics_barrelLengthInfluenceEnabled = true;
+force force ace_advanced_ballistics_bulletTraceEnabled = true;
+force force ace_advanced_ballistics_enabled = true;
+force force ace_advanced_ballistics_muzzleVelocityVariationEnabled = true;
 force force ace_advanced_ballistics_simulationInterval = 0.05;
 
 // ACE Advanced Fatigue
 force force ace_advanced_fatigue_enabled = true;
 force force ace_advanced_fatigue_enableStaminaBar = false;
 force force ace_advanced_fatigue_loadFactor = 1;
-force force ace_advanced_fatigue_performanceFactor = 4.5;
-force force ace_advanced_fatigue_recoveryFactor = 4;
+force force ace_advanced_fatigue_performanceFactor = 4.8;
+force force ace_advanced_fatigue_recoveryFactor = 5;
+force force ace_advanced_fatigue_swayFactor = 1;									
 force force ace_advanced_fatigue_terrainGradientFactor = 1;
 
 // ACE Advanced Throwing
@@ -97,13 +98,17 @@ ace_interact_menu_colorTextMin = [1,1,1,0.25];
 ace_interact_menu_cursorKeepCentered = false;
 ace_interact_menu_menuAnimationSpeed = 0;
 ace_interact_menu_menuBackground = 0;
+ace_interact_menu_selectorColor = [1,0,0];										  
 ace_interact_menu_shadowSetting = 2;
 ace_interact_menu_textSize = 2;
-ace_interact_menu_useListMenu = true;
+force force ace_interact_menu_useListMenu = true;
 
 // ACE Logistics
 force force ace_cargo_enable = true;
+force force ace_cargo_loadTimeCoefficient = 5;
 force force ace_cargo_paradropTimeCoefficent = 2.5;
+force force ace_rearm_level = 2;
+force force ace_rearm_supply = 2;						  
 force force ace_refuel_hoseLength = 6;
 force force ace_refuel_rate = 2.00534;
 force force ace_repair_addSpareParts = true;
@@ -203,6 +208,11 @@ force force ace_mk6mortar_useAmmoHandling = true;
 
 // ACE Name Tags
 force force ace_nametags_defaultNametagColor = [0.77,0.51,0.08,1];
+force force ace_nametags_nametagColorBlue = [0.67,0.67,1,1];
+force force ace_nametags_nametagColorGreen = [0.67,1,0.67,1];
+force force ace_nametags_nametagColorMain = [1,1,1,1];
+force force ace_nametags_nametagColorRed = [1,0.67,0.67,1];
+force force ace_nametags_nametagColorYellow = [1,1,0.67,1];
 force force ace_nametags_playerNamesMaxAlpha = 0.603832;
 force force ace_nametags_playerNamesViewDistance = 4;
 force force ace_nametags_showCursorTagForVehicles = false;
@@ -214,11 +224,11 @@ ace_nametags_showVehicleCrewInfo = true;
 ace_nametags_tagSize = 2;
 
 // ACE Nightvision
-force force ace_nightvision_aimDownSightsBlur = 0.7;
+force force ace_nightvision_aimDownSightsBlur = 0.1;
 force force ace_nightvision_disableNVGsWithSights = false;
-force force ace_nightvision_effectScaling = 0.7;
-force force ace_nightvision_fogScaling = 0.7;
-force force ace_nightvision_noiseScaling = 1;
+force force ace_nightvision_effectScaling = 0.4;
+force force ace_nightvision_fogScaling = 0.0;
+force force ace_nightvision_noiseScaling = 0.2;
 force force ace_nightvision_shutterEffects = true;
 
 // ACE Overheating
@@ -237,7 +247,8 @@ force force ace_finger_indicatorForSelf = true;
 force force ace_finger_maxRange = 7;
 
 // ACE Pylons
-force force ace_pylons_enabled = true;
+force force ace_pylons_enabledForZeus = true;
+force force ace_pylons_enabledFromAmmoTrucks = true;
 force force ace_pylons_rearmNewPylons = false;
 force force ace_pylons_requireEngineer = false;
 force force ace_pylons_requireToolkit = false;
@@ -246,13 +257,10 @@ force force ace_pylons_timePerPylon = 5;
 
 // ACE Quick Mount
 force force ace_quickmount_distance = 3;
-force force ace_quickmount_enabled = false;
-force force ace_quickmount_priority = 0;
-force force ace_quickmount_speed = 18;
-
-// ACE Rearm
-force force ace_rearm_level = 2;
-force force ace_rearm_supply = 2;
+force force ace_quickmount_enabled = true;
+force force ace_quickmount_enableMenu = 3;
+ace_quickmount_priority = 3;
+force force ace_quickmount_speed = 10;
 
 // ACE Respawn
 force force ace_respawn_removeDeadBodiesDisconnected = true;
@@ -293,7 +301,8 @@ force force ace_gforces_enabledFor = 0;
 force force ace_hitreactions_minDamageToTrigger = 0.1;
 force force ace_inventory_inventoryDisplaySize = 0;
 force force ace_laser_dispersionCount = 2;
-force force ace_microdagr_mapDataAvailable = 2;
+force force ace_microdagr_mapDataAvailable = 3;
+force ace_microdagr_waypointPrecision = 3;
 force force ace_optionsmenu_showNewsOnMainMenu = true;
 force force ace_overpressure_distanceCoefficient = 1;
 
@@ -337,7 +346,7 @@ force force ace_ui_zeroing = true;
 // ACE Vehicle Lock
 force force ace_vehiclelock_defaultLockpickStrength = 60;
 force force ace_vehiclelock_lockVehicleInventory = true;
-force force ace_vehiclelock_vehicleStartingLockState = -1;
+force force ace_vehiclelock_vehicleStartingLockState = 2;
 
 // ACE View Distance Limiter
 force force ace_viewdistance_enabled = false;
@@ -345,13 +354,13 @@ force force ace_viewdistance_enabled = false;
 // ACE Weapons
 force force ace_common_persistentLaserEnabled = true;
 force force ace_laserpointer_enabled = true;
-force force ace_reload_displayText = false;
+force force ace_reload_displayText = true;
 force force ace_weaponselect_displayText = true;
 
 // ACE Weather
 force force ace_weather_enabled = true;
 force force ace_weather_updateInterval = 60;
-force force ace_weather_windSimulation = true;
+force force ace_weather_windSimulation = false;
 
 // ACE Wind Deflection
 force force ace_winddeflection_enabled = true;
@@ -360,14 +369,217 @@ force force ace_winddeflection_vehicleEnabled = true;
 
 // ACE Zeus
 force force ace_zeus_autoAddObjects = true;
+force force ace_zeus_canCreateZeus = -1;
 force force ace_zeus_radioOrdnance = false;
 force force ace_zeus_remoteWind = false;
 force force ace_zeus_revealMines = 0;
 force force ace_zeus_zeusAscension = true;
 force force ace_zeus_zeusBird = false;
 
+// ACEX Field Rations
+force force acex_field_rations_enabled = true;
+force force acex_field_rations_hudShowLevel = 20;
+force force acex_field_rations_hudTransparency = -1;
+force force acex_field_rations_hudType = 1;
+force force acex_field_rations_timeWithoutFood = 6;
+force force acex_field_rations_timeWithoutWater = 5;
+
+// ACEX Fortify
+acex_fortify_settingHint = 2;
+
+// ACEX Headless
+acex_headless_delay = 15;
+acex_headless_enabled = false;
+acex_headless_endMission = 0;
+acex_headless_log = false;
+
 // ACEX Sitting
 force force acex_sitting_enable = true;
+
+// ACEX Volume
+force force acex_volume_enabled = true;
+force force acex_volume_fadeDelay = 1;
+force force acex_volume_lowerInVehicles = true;
+force force acex_volume_reduction = 5;
+force force acex_volume_remindIfLowered = false;
+force force acex_volume_showNotification = false;
+
+// Achilles - Available Factions
+Achilles_var_BLU_CTRG_F = true;
+Achilles_var_BLU_F = true;
+Achilles_var_BLU_G_F = true;							
+Achilles_var_BLU_GEN_F = true;
+Achilles_var_BLU_T_F = true;
+Achilles_var_BWA3_Faction_Fleck = true;
+Achilles_var_BWA3_Faction_Tropen = true;
+Achilles_var_CIV_F = true;
+Achilles_var_CIV_F_AFRICA = true;
+Achilles_var_CIV_F_ASIA = true;
+Achilles_var_CIV_F_EUROPE = true;
+Achilles_var_CIV_F_TANOA = true;
+Achilles_var_CIV_IDAP_F = true;
+Achilles_var_CUP_B_CDF = true;
+Achilles_var_CUP_B_CZ = true;
+Achilles_var_CUP_B_GB = true;
+Achilles_var_CUP_B_GER = true;
+Achilles_var_CUP_B_RNZN = true;
+Achilles_var_CUP_B_US = true;
+Achilles_var_CUP_B_US_Army = true;
+Achilles_var_CUP_B_USMC = true;
+Achilles_var_CUP_C_CHERNARUS = true;
+Achilles_var_CUP_C_RU = true;
+Achilles_var_CUP_C_SAHRANI = true;
+Achilles_var_CUP_C_Special = true;
+Achilles_var_CUP_C_TK = true;
+Achilles_var_CUP_I_NAPA = true;
+Achilles_var_CUP_I_PMC_ION = true;
+Achilles_var_CUP_I_RACS = true;
+Achilles_var_CUP_I_TK_GUE = true;
+Achilles_var_CUP_I_UN = true;
+Achilles_var_CUP_O_ChDKZ = true;
+Achilles_var_CUP_O_RU = true;
+Achilles_var_CUP_O_SLA = true;
+Achilles_var_CUP_O_TK = true;
+Achilles_var_CUP_O_TK_MILITIA = true;
+Achilles_var_IND_C_F = true;
+Achilles_var_IND_F = true;
+Achilles_var_IND_G_F = true;
+Achilles_var_Interactive_F = true;
+Achilles_var_OPF_F = true;
+Achilles_var_OPF_F_A = true;
+Achilles_var_OPF_F_B = true;
+Achilles_var_OPF_F_D = true;
+Achilles_var_OPF_F_U = true;
+Achilles_var_OPF_F_WD = true;
+Achilles_var_OPF_G_F = true;							
+Achilles_var_OPF_T_F = true;
+Achilles_var_OPF_V_F = true;
+Achilles_var_rhs_faction_insurgents = true;
+Achilles_var_rhs_faction_msv = true;
+Achilles_var_rhs_faction_rva = true;
+Achilles_var_rhs_faction_socom = true;
+Achilles_var_rhs_faction_tv = true;
+Achilles_var_rhs_faction_usaf = true;
+Achilles_var_rhs_faction_usarmy = true;
+Achilles_var_rhs_faction_usarmy_d = true;
+Achilles_var_rhs_faction_usarmy_wd = true;
+Achilles_var_rhs_faction_usmc = true;
+Achilles_var_rhs_faction_usmc_d = true;
+Achilles_var_rhs_faction_usmc_wd = true;
+Achilles_var_rhs_faction_usn = true;
+Achilles_var_rhs_faction_vdv = true;
+Achilles_var_rhs_faction_vdv_45 = true;
+Achilles_var_rhs_faction_vmf = true;
+Achilles_var_rhs_faction_vpvo = true;
+Achilles_var_rhs_faction_vv = true;
+Achilles_var_rhs_faction_vvs = true;
+Achilles_var_rhs_faction_vvs_c = true;
+Achilles_var_rhsgref_faction_cdf_air = true;
+Achilles_var_rhsgref_faction_cdf_air_b = true;											  
+Achilles_var_rhsgref_faction_cdf_ground = true;
+Achilles_var_rhsgref_faction_cdf_ground_b = true;												 
+Achilles_var_rhsgref_faction_cdf_ng = true;
+Achilles_var_rhsgref_faction_cdf_ng_b = true;											 
+Achilles_var_rhsgref_faction_chdkz = true;
+Achilles_var_rhsgref_faction_chdkz_g = true;											
+Achilles_var_rhsgref_faction_hidf = true;
+Achilles_var_rhsgref_faction_nationalist = true;
+Achilles_var_rhsgref_faction_tla = true;
+Achilles_var_rhsgref_faction_un = true;
+Achilles_var_SAM_SAF = true;
+Achilles_var_SAM_SAF_M90 = true;
+Achilles_var_SAM_SAF_M90K = true;
+Achilles_var_sfp_criminals = true;
+Achilles_var_sfp_police = true;
+Achilles_var_sfp_swe_1981 = true;
+Achilles_var_sfp_swe_1990 = true;
+Achilles_var_sfp_swe_1990s = true;
+Achilles_var_sfp_swe_2015 = true;
+Achilles_var_sfp_swe_2015d = true;
+Achilles_var_sfp_swe_2035 = true;
+Achilles_var_sfp_un = true;
+Achilles_var_sfp_un_congo = true;
+Achilles_var_Virtual_F = true;
+
+// Achilles - Available Modules
+Achilles_var_Achilles_ACE_Heal_Module = true;
+Achilles_var_Achilles_ACE_Injury_Module = true;
+Achilles_var_Achilles_AddECM_Module = true;
+Achilles_var_Achilles_Animation_Module = true;
+Achilles_var_Achilles_Attach_To_Module = true;
+Achilles_var_Achilles_Bind_Variable_Module = true;
+Achilles_var_Achilles_Buildings_Destroy_Module = true;
+Achilles_var_Achilles_Buildings_LockDoors_Module = true;
+Achilles_var_Achilles_Buildings_ToggleLight_Module = true;
+Achilles_var_Achilles_CAS_Module = true;
+Achilles_var_Achilles_Change_Ability_Module = true;
+Achilles_var_Achilles_Change_Altitude_Module = true;
+Achilles_var_Achilles_Chatter_Module = true;
+Achilles_var_Achilles_Create_Universal_Target_Module = true;
+Achilles_var_Achilles_DevTools_FunctionViewer = true;
+Achilles_var_Achilles_DevTools_ShowInAnimViewer = true;
+Achilles_var_Achilles_DevTools_ShowInConfig = true;
+Achilles_var_Achilles_Earthquake_Module = true;
+Achilles_var_Achilles_Hide_Objects_Module = true;
+Achilles_var_Achilles_IED_Module = true;
+Achilles_var_Achilles_Make_Invincible_Module = true;
+Achilles_var_Achilles_Module_Arsenal_AddFull = true;
+Achilles_var_Achilles_Module_Arsenal_CopyToClipboard = true;
+Achilles_var_Achilles_Module_Arsenal_CreateCustom = true;
+Achilles_var_Achilles_Module_Arsenal_Paste = true;
+Achilles_var_Achilles_Module_Arsenal_Remove = true;
+Achilles_var_Achilles_Module_Change_Side_Relations = true;
+Achilles_var_Achilles_Module_Equipment_Attach_Dettach_Effect = true;
+Achilles_var_Achilles_Module_FireSupport_CASBomb = true;
+Achilles_var_Achilles_Module_FireSupport_CASGun = true;
+Achilles_var_Achilles_Module_FireSupport_CASGunMissile = true;
+Achilles_var_Achilles_Module_FireSupport_CASMissile = true;
+Achilles_var_Achilles_Module_Manage_Advanced_Compositions = true;
+Achilles_var_Achilles_Module_Player_Set_Frequencies = true;
+Achilles_var_Achilles_Module_Rotation = true;
+Achilles_var_Achilles_Module_Spawn_Advanced_Composition = true;
+Achilles_var_Achilles_Module_Spawn_Carrier = true;
+Achilles_var_Achilles_Module_Spawn_Destroyer = true;
+Achilles_var_Achilles_Module_Spawn_Effects = true;
+Achilles_var_Achilles_Module_Spawn_Explosives = true;
+Achilles_var_Achilles_Module_Spawn_Intel = true;
+Achilles_var_Achilles_Module_Supply_Drop = true;
+Achilles_var_Achilles_Module_Zeus_AssignZeus = true;
+Achilles_var_Achilles_Module_Zeus_SwitchUnit = true;
+force force Achilles_var_Achilles_Nuke_Module = false;
+Achilles_var_Achilles_Set_Date_Module = true;
+Achilles_var_Achilles_Set_Height_Module = true;
+Achilles_var_Achilles_Set_Weather_Module = true;
+Achilles_var_Achilles_Sit_On_Chair_Module = true;
+Achilles_var_Achilles_SuicideBomber_Module = true;
+Achilles_var_Achilles_Suppressive_Fire_Module = true;
+Achilles_var_Achilles_Toggle_Simulation_Module = true;
+Achilles_var_Achilles_Transfer_Ownership_Module = true;
+Achilles_var_Ares_Artillery_Fire_Mission_Module = true;
+Achilles_var_Ares_Module_Bahaviour_Garrison_Nearest = true;
+Achilles_var_Ares_Module_Bahaviour_SurrenderUnit = true;
+Achilles_var_Ares_Module_Bahaviour_UnGarrison = true;
+Achilles_var_Ares_Module_Behaviour_Patrol = true;
+Achilles_var_Ares_Module_Behaviour_Search_Nearby_And_Garrison = true;
+Achilles_var_Ares_Module_Behaviour_Search_Nearby_Building = true;
+Achilles_var_Ares_Module_Dev_Tools_Create_Mission_SQF = true;
+Achilles_var_Ares_Module_Dev_Tools_Execute_Code = true;
+Achilles_var_Ares_Module_Equipment_Flashlight_IR_ON_OFF = true;
+Achilles_var_Ares_Module_Equipment_NVD_TACLIGHT_IR = true;
+Achilles_var_Ares_Module_Equipment_Turret_Optics = true;
+Achilles_var_Ares_Module_Player_Change_Player_Side = true;
+Achilles_var_Ares_Module_Player_Create_Teleporter = true;
+Achilles_var_Ares_Module_Player_Teleport = true;
+Achilles_var_Ares_Module_Reinforcements_Create_Lz = true;
+Achilles_var_Ares_Module_Reinforcements_Create_Rp = true;
+Achilles_var_Ares_Module_Reinforcements_Spawn_Units = true;
+Achilles_var_Ares_Module_Spawn_Submarine = true;
+Achilles_var_Ares_Module_Spawn_Trawler = true;
+Achilles_var_Ares_Module_Zeus_Add_Remove_Editable_Objects = true;
+Achilles_var_Ares_Module_Zeus_Hint = true;
+Achilles_var_Ares_Module_Zeus_Switch_Side = true;
+Achilles_var_Ares_Module_Zeus_Visibility = true;
+Achilles_var_ModulePunishment_F = true;
 
 // Achilles - Curator Vision Modes
 force force achilles_curator_vision_blackhot = false;
@@ -388,12 +600,13 @@ Achilles_var_setRadioFrequenciesLR_Default = "50";
 Achilles_var_setRadioFrequenciesSR_Default = "150";
 
 // Achilles - Icon Selection
-force force Achilles_var_iconSelection = "Achilles_var_iconSelection_Achilles";
+force force Achilles_var_iconSelection = "Achilles_var_iconSelection_Ares";
 
 // Achilles - Modules Interface
-force force Achilles_var_moduleTreeCollapse = false;
+force force Achilles_var_moduleTreeCollapse = true;
 force force Achilles_var_moduleTreeDLC = true;
 force force Achilles_var_moduleTreeHelmet = true;
+force force Achilles_var_moduleTreeSearchPatch = false;
 
 // ACRE2
 force force acre_sys_core_fullDuplex = false;
@@ -424,8 +637,30 @@ force force boxloader_maxload_push = 300;
 force force boxloader_push_enabled = true;
 force force boxloader_retrofit_enabled = true;
 
-// Bundeswehr
-force force BWA3_NaviPad_showMembers = false;
+// CBA UI
+cba_ui_StorePasswords = 1;
+
+// CF_Woodland
+force force cf_woodland_branches_check_side_reveal = 30;
+force force cf_woodland_branches_check_time = 5;
+force force cf_woodland_branches_initial_reveal = 0.7;
+force force cf_woodland_branches_jogging_chance = 0.25;
+force force cf_woodland_branches_jogging_range = 50;
+force force cf_woodland_branches_maximum_reveal = 1.5;
+force force cf_woodland_branches_prone_fast_chance = 0.25;
+force force cf_woodland_branches_prone_fast_range = 50;
+force force cf_woodland_branches_prone_medium_chance = 0.05;
+force force cf_woodland_branches_prone_medium_range = 40;
+force force cf_woodland_branches_prone_slow_chance = 0.01;
+force force cf_woodland_branches_prone_slow_range = 25;
+force force cf_woodland_branches_sprinting_chance = 0.9;
+force force cf_woodland_branches_sprinting_range = 100;
+force force cf_woodland_branches_tactical_chance = 0.05;
+force force cf_woodland_branches_tactical_range = 40;
+force force cf_woodland_branches_terrain_count = 1;
+force force cf_woodland_branches_terrain_distance = 3;
+force force cf_woodland_branches_walking_chance = 0.01;
+force force cf_woodland_branches_walking_range = 25;
 
 // Laxemann Immerse
 force force L_Immerse_exShake = true;
@@ -444,9 +679,9 @@ force force VCM_ARTYSPREAD = 400;
 force force VCM_Debug = false;
 force force VCM_FRMCHANGE = true;
 force force VCM_HEARINGDISTANCE = 500;
-force force VCM_MINECHANCE = 75;
+force force VCM_MINECHANCE = 01;
 force force VCM_RAGDOLL = true;
-force force VCM_RAGDOLLCHC = 50;
+force force VCM_RAGDOLLCHC = 70;
 force force VCM_SIDEENABLED = [WEST,EAST,GUER];
 force force VCM_SKILLCHANGE = true;
 force force VCM_STATICARMT = 300;
