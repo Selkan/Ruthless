@@ -10,10 +10,10 @@ force force ace_advanced_ballistics_simulationInterval = 0.05;
 force force ace_advanced_fatigue_enabled = true;
 force force ace_advanced_fatigue_enableStaminaBar = false;
 force force ace_advanced_fatigue_loadFactor = 1;
-force force ace_advanced_fatigue_performanceFactor = 4.8;
-force force ace_advanced_fatigue_recoveryFactor = 5;
-force force ace_advanced_fatigue_swayFactor = 1;									
-force force ace_advanced_fatigue_terrainGradientFactor = 1;
+force force ace_advanced_fatigue_performanceFactor = 2.5;
+force force ace_advanced_fatigue_recoveryFactor = 2.5;
+force force ace_advanced_fatigue_swayFactor = 1.5;
+force force ace_advanced_fatigue_terrainGradientFactor = 0.7;
 
 // ACE Advanced Throwing
 force force ace_advanced_throwing_enabled = true;
@@ -154,18 +154,19 @@ force force ace_maptools_drawStraightLines = true;
 force force ace_maptools_rotateModifierKey = 1;
 
 // ACE Medical
-force force ace_medical_ai_enabledFor = 0;
-force force ace_medical_AIDamageThreshold = 0.8;
+force force ace_medical_ai_enabledFor = 2;
+force force ace_medical_AIDamageThreshold = 0.5;
 force force ace_medical_allowLitterCreation = true;
 force force ace_medical_allowUnconsciousAnimationOnTreatment = true;
 force force ace_medical_amountOfReviveLives = -1;
-force force ace_medical_bleedingCoefficient = 0.5;
+force force ace_medical_bleedingCoefficient = 1;
 force force ace_medical_blood_enabledFor = 2;
 force force ace_medical_consumeItem_PAK = 0;
 force force ace_medical_consumeItem_SurgicalKit = 0;
+force force ace_medical_convertItems = 0;
 force force ace_medical_delayUnconCaptive = 3;
 force force ace_medical_enableAdvancedWounds = true;
-force force ace_medical_enableFor = 1;
+force force ace_medical_enableFor = 0;
 force force ace_medical_enableOverdosing = true;
 force force ace_medical_enableRevive = 0;
 force force ace_medical_enableScreams = true;
@@ -187,18 +188,19 @@ force force ace_medical_menu_maxRange = 2;
 force force ace_medical_menu_openAfterTreatment = true;
 force force ace_medical_menu_useMenu = 1;
 force force ace_medical_menuTypeStyle = 0;
+force force ace_medical_menuTypeStyleSelf = true;
 force force ace_medical_moveUnitsFromGroupOnUnconscious = false;
 force force ace_medical_painCoefficient = 1;
 force force ace_medical_painEffectType = 1;
 force force ace_medical_painIsOnlySuppressed = true;
-force force ace_medical_playerDamageThreshold = 5;
-force force ace_medical_preventInstaDeath = true;
+force force ace_medical_playerDamageThreshold = 6;
+force force ace_medical_preventInstaDeath = false;
 force force ace_medical_remoteControlledAI = true;
 force force ace_medical_useCondition_PAK = 1;
 force force ace_medical_useCondition_SurgicalKit = 1;
 force force ace_medical_useLocation_basicEpi = 0;
 force force ace_medical_useLocation_PAK = 3;
-force force ace_medical_useLocation_SurgicalKit = 0;
+force force ace_medical_useLocation_SurgicalKit = 2;
 
 // ACE Mk6 Mortar
 force force ace_mk6mortar_airResistanceEnabled = true;
