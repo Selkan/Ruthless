@@ -1,4 +1,4 @@
-//Skapar eget innebåll i befintliga lådor
+//description.ext Skapar eget innebåll i befintliga lådor
 class Extended_Init_EventHandlers {
     class SAM_AMMOBOX_2 { 
          initServer = "(_this select 0) call (compile preprocessFileLineNumbers 'scripts\ammobox.sqf')";
