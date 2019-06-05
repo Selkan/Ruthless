@@ -1,0 +1,34 @@
+//description.ext Skapar eget innebåll i befintliga lådor
+class Extended_Init_EventHandlers {
+    class SAM_AMMOBOX_2 { 
+         initServer = "(_this select 0) call (compile preprocessFileLineNumbers 'scripts\ammobox.sqf')";
+    };
+	
+    class Box_NATO_Grenades_F { 
+         initServer = "(_this select 0) call (compile preprocessFileLineNumbers 'scripts\granatbox.sqf')";
+    };
+
+    class Box_NATO_AmmoOrd_F { 
+         initServer = "(_this select 0) call (compile preprocessFileLineNumbers 'scripts\farbbox.sqf')";
+    };
+
+    class SAM_KSP90_ammobox { 
+         initServer = "(_this select 0) call (compile preprocessFileLineNumbers 'scripts\ksp90box.sqf')";
+    };
+
+    class Box_NATO_WpsLaunch_F { 
+         initServer = "(_this select 0) call (compile preprocessFileLineNumbers 'scripts\rb57box.sqf')";
+    };
+
+    class B_CargoNet_01_ammo_F { 
+         initServer = "(_this select 0) call (compile preprocessFileLineNumbers 'scripts\ammocargonet.sqf')";
+    };
+
+    class ACE_Box_Misc { 
+         initServer = "(_this select 0) call (compile preprocessFileLineNumbers 'scripts\miscbox.sqf')";
+    };
+
+    class sfp_ammobox_container_2035 { 
+         initServer = "(_this select 0) call (compile preprocessFileLineNumbers 'scripts\container.sqf')";
+    };
+};
