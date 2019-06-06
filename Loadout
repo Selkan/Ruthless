@@ -4,8 +4,8 @@ class soldat
 {
     displayName = "Skyttesoldat";
     // All randomized.
-     uniform[] = {"SAM_Crye_M90_uniform","SAM_Crye_M90_uniform_r"};
-       vest[] = {"SAM_PlateCarrier"};
+     uniform[] = {"M90_Camo_Cyre"};
+       vest[] = {"VSM_CarrierRig_Operator_OGA_OD"};
        backpack[] = {"SAM_AssaultPack_rgr"};
        headgear[] = {"sfp_m90w_cap"};
        goggles[] = {};
@@ -23,15 +23,15 @@ class soldat
     // Only *Weapons[] arrays are randomized
     secondaryWeapon[] = {};
     secondaryAttachments[] = {};
-    sidearmWeapon[] = {"rhsusf_weap_glock17g4"};
-    sidearmAttachments[] = {};
+    sidearmWeapon[] = {"CUP_hgun_Glock17_blk"};
+    sidearmAttachments[] = {"sfp_tlr2"};
     // Leave empty to remove all. "Default" for secondaryWeapon or sidearmWeapon > leave original weapon.
 
     // These are added to the uniform or vest
     magazines[] =
     {
-        LIST_2("rhsusf_mag_17Rnd_9x19_JHP"),
-		LIST_8("sfp_30Rnd_556x45_Stanag"),
+        LIST_2("CUP_17Rnd_9x19_glock17"),
+		LIST_8("sfp_30Rnd_556x45_Stanag_plastic"),
 		LIST_2("sam_hgr90"),
 		LIST_2("sam_rhgr5"),
 		"sam_chgr96"
@@ -55,7 +55,7 @@ class soldat
 
     // These are put into the backpack
     backpackItems[] = {
-		"SAM_HelmetIA_M90",
+		"M90_Helmet1",
 		"G_Combat",
 		"ACE_NVG_Gen4",
 		"ACE_CableTie",
@@ -74,17 +74,19 @@ class soldat
 class grpc : soldat
 {
     displayName = "Gruppchef";
-    backpack[] = {"SAM_Kitbag_rgr"};
+    vest[] = {"VSM_RAV_operator_OGA_OD"};
+	backpack[] = {"SAM_Kitbag_rgr"};
 	primaryWeapon[] = {"sfp_ak5c_m203"};
     items[] +=
     {
         "ACRE_PRC148",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		LIST_4("1Rnd_HE_Grenade_shell")
     };
 	linkedItems[] += 
 	{
-		"Binocular"
+		"ACE_Vector"
     };
     backpackItems[] += 
 	{
@@ -100,69 +102,40 @@ class grpc : soldat
 		"ACE_SpraypaintBlue",
 		LIST_5("Chemlight_green"),
 		LIST_5("Chemlight_red"),
-		LIST_5("Chemlight_yellow")
+		LIST_5("Chemlight_yellow"),
     };	
 };
 
 class stfgrpc : grpc 
 {
     displayName = "Stf gruppchef";
+    vest[] = {"VSM_LBT6094_operator_OGA_OD"};
 };
 
 class plutc : grpc 
 {
     displayName = "Plutonchef";
-    items[] = 
+    items[] += 
     {
-		LIST_2("ACE_fieldDressing"),
-		"ACE_tourniquet",
-		"ACE_quikclot",
-		"ACE_Flashlight_KSF1",
-		"ACE_IR_Strobe_Item",
-		LIST_2("ACRE_PRC148"),
-		"ACE_MapTools",
-		LIST_4("1Rnd_HE_Grenade_shell")
+		"ACRE_PRC148"
     };
-	linkedItems[] = {
-		"ItemMap",
-		"ItemCompass",
-		"ACE_Vector",
-		"ItemRadio",
-		"ItemWatch"
+	linkedItems[] += 
+	{
+		"ACE_Altimeter"
     };
 };
 
-class stfplutc : plutc 
+class stfplutc : stfgrpc 
 {
     displayName = "Stf plutonchef";
 };
 
-class kompc : soldat
+class kompc : plutc
 {
     displayName = "Kompanichef";
-    backpack[] = {"SAM_Kitbag_rgr"};
-	vest[] = {"V_Safety_yellow_F"};   
-	primaryWeapon[] = {};
-    items[] +=
-    {
-        "ACRE_PRC148",
-		"ACE_MapTools"
-    };
-    linkedItems[] += 
-	{
-        "ItemcTab",
-		"ACE_Vector"
-    };	
-    backpackItems[] += 
-	{
-		"ACE_SpraypaintBlue",
-		LIST_5("Chemlight_green"),
-		LIST_5("Chemlight_red"),
-		LIST_5("Chemlight_yellow")
-    };	
 };
 
-class stfkompc : kompc 
+class stfkompc : stfplutc 
 {
     displayName = "Stf kompanichef";
 };
@@ -170,7 +143,9 @@ class stfkompc : kompc
 class sjv : soldat 
 {
     displayName = "Sjukvårdare";
-       backpack[] = {"SAM_Kitbag_rgr_med"};
+    traits[] = {"medic"};
+    vest[] = {"VSM_FAPC_MG_OGA_OD"};
+	backpack[] = {"SAM_Kitbag_rgr_med"};
     primaryWeapon[] = {"sfp_ak5c"};
     items[] += 
     {
@@ -196,19 +171,20 @@ class sjv : soldat
 class ksp90 : soldat 
 {
     displayName = "Kulspruteskytt 90";
-       backpack[] = {"SAM_Kitbag_rgr"};
-    primaryWeapon[] = {"rhs_weap_m249_pip_S_para"};
+    vest[] = {"VSM_RAV_MG_OGA_OD"};
+	backpack[] = {"SAM_Kitbag_rgr"};
+    primaryWeapon[] = {"CUP_lmg_m249_para"};
     magazines[] =
     {
-        LIST_2("rhsusf_mag_17Rnd_9x19_JHP"),
-		"rhs_200rnd_556x45_M_SAW",
+        LIST_2("CUP_17Rnd_9x19_glock17"),
+		"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
 		LIST_2("sam_hgr90"),
 		LIST_2("sam_rhgr5"),
 		"sam_chgr96"
     };
     backpackItems[] += 
 	{
-		LIST_3("rhs_200rnd_556x45_M_SAW"),
+		LIST_2("CUP_200Rnd_TE4_Red_Tracer_556x45_M249"),
 		"ACE_SpareBarrel"
     };
 };
@@ -216,11 +192,12 @@ class ksp90 : soldat
 class ksp58 : soldat 
 {
     displayName = "Kulspruteskytt 58";
-       backpack[] = {"SAM_Kitbag_rgr"};
+    vest[] = {"VSM_RAV_MG_OGA_OD"};
+	backpack[] = {"SAM_Kitbag_rgr"};
     primaryWeapon[] = {"SAM_KSP58B2"};
     magazines[] =
     {
-        LIST_2("rhsusf_mag_17Rnd_9x19_JHP"),
+        LIST_2("CUP_17Rnd_9x19_glock17"),
 		"SAM_99Rnd_762x51",
 		LIST_2("sam_hgr90"),
 		LIST_2("sam_rhgr5"),
@@ -236,7 +213,9 @@ class ksp58 : soldat
 class farb : soldat 
 {
     displayName = "Fältarbetare";
-       backpack[] = {"SAM_Kitbag_rgr_eng"};
+    traits[] = {"engineer"};
+    vest[] = {"VSM_LBT6094_MG_OGA_OD"};
+	backpack[] = {"SAM_Kitbag_rgr_eng"};
 	primaryWeapon[] = {"sfp_ak5c"};
     items[] += 
     {
@@ -247,22 +226,27 @@ class farb : soldat
         "sfp_optic_3x_aimpoint",
 		LIST_2("ClaymoreDirectionalMine_Remote_Mag"),
 		LIST_2("SLAMDirectionalMine_Wire_Mag"),
-		LIST_8("sfp_sprdeg46_mag"),
-		"ACE_SpraypaintBlue",
+		LIST_2("AMP_Breaching_Charge_Mag"),
+		LIST_4("AMP_Door_Wedge"),
 		"ACE_SpraypaintGreen",
 		"ACE_SpraypaintRed",
 		"ACE_DefusalKit",
-		"ACE_VMH3",
-		"Chemlight_green",
-		"Chemlight_red"
+		"ACE_VMH3"
     };
 };
 
 class robot : soldat 
 {
-    displayName = "Robotskytt";
+    displayName = "Robotskytt1";
+    vest[] = {"VSM_FAPC_Operator_OGA_OD"};
 	primaryWeapon[] = {"sfp_ak5c_alt","sfp_ak5c"};
     secondaryWeapon[] = {"launch_NLAW_F"};
+};
+
+class robot2 : robot 
+{
+    displayName = "Robotskytt_alt";
+    vest[] = {"VSM_CarrierRig_Operator_OGA_OD"};
 };
 
 class grkplutc : grpc 
@@ -297,7 +281,8 @@ class grk : soldat
 class mekaniker : soldat 
 {
     displayName = "Mekaniker";
-    items[] += 
+    traits[] = {"engineer"};
+	items[] += 
     {
 		"ACE_Flashlight_XL50"
     };
@@ -350,7 +335,7 @@ class prsk : soldat
     attachment[] = {};
     magazines[] =
     {
-        LIST_2("rhsusf_mag_17Rnd_9x19_JHP"),
+        LIST_2("CUP_17Rnd_9x19_glock17"),
 		LIST_8("sam_9Rnd_762x51_mag"),
 		LIST_2("sam_hgr90"),
 		LIST_2("sam_rhgr5"),
@@ -395,13 +380,13 @@ class vc : soldat
      uniform[] = {"sfp_m90p_uniform"};
        vest[] = {"sfp_kroppsskydd94"};
        backpack[] = {};
-       headgear[] = {"rhsusf_cvc_green_ess"};
+       headgear[] = {"H_HelmetCrew_I"};
     primaryWeapon[] = {"sfp_ak5dmk2"};
     attachment[] = {};
     magazines[] =
     {
-        LIST_2("rhsusf_mag_17Rnd_9x19_JHP"),
-		LIST_4("sfp_30Rnd_556x45_Stanag"),
+        LIST_2("CUP_17Rnd_9x19_glock17"),
+		LIST_4("sfp_30Rnd_556x45_Stanag_plastic"),
 		"sam_hgr90",
 		"sam_rhgr5"
     };
@@ -417,7 +402,7 @@ class vc : soldat
 class vagnsbes : vc 
 {
     displayName = "Vagnsbesättning";
-      headgear[] = {"H_HelmetCrew_I"};
+    traits[] = {"engineer"};
 };
 
 class pilot 
@@ -436,11 +421,11 @@ class pilot
     silencer[] = {};
     secondaryWeapon[] = {};
     secondaryAttachments[] = {};
-    sidearmWeapon[] = {"rhsusf_weap_glock17g4"};
-    sidearmAttachments[] = {};
+    sidearmWeapon[] = {"CUP_hgun_Glock17_blk"};
+    sidearmAttachments[] = {"sfp_tlr2"};
     magazines[] =
     {
-        LIST_2("rhsusf_mag_17Rnd_9x19_JHP")
+        LIST_2("CUP_17Rnd_9x19_glock17")
     };
     items[] = 
     {
@@ -450,14 +435,17 @@ class pilot
 		"ACRE_PRC152",
 		"ACE_Flashlight_KSF1",
 		"G_Aviator",
-		"NVGoggles_OPFOR",
-		"ACE_IR_Strobe_Item"
+		"NVGogglesB_gry_f",
+		"ACE_IR_Strobe_Item",
+		"ACE_Canteen",
+		"ACE_MRE_ChickenTikkaMasala"
     };
     linkedItems[] = {
         "ItemMap",
         "ItemCompass",
 		"ItemRadio",
-        "ItemWatch"
+        "ACE_Altimeter",
+		"ACE_NVG_Wide"
     };
 };
 
@@ -513,11 +501,11 @@ class civil
     silencer[] = {};
     secondaryWeapon[] = {};
     secondaryAttachments[] = {};
-    sidearmWeapon[] = {"rhsusf_weap_glock17g4"};
-    sidearmAttachments[] = {};
+    sidearmWeapon[] = {"CUP_hgun_Glock17_blk"};
+    sidearmAttachments[] = {"sfp_tlr2"};
     magazines[] =
     {
-        LIST_2("rhsusf_mag_17Rnd_9x19_JHP")
+        LIST_2("CUP_17Rnd_9x19_glock17")
     };
     items[] = {};
     linkedItems[] = 
@@ -531,7 +519,8 @@ class civil
 	{
         LIST_2("ACE_fieldDressing"),
         "ACE_morphine",
-		"ry_canteen_item"
+		"ACE_Canteen",
+		"ACE_MRE_ChickenTikkaMasala"
     };
     radios[] = {};
 };
@@ -539,18 +528,19 @@ class civil
 class zeus : soldat 
 {
     displayName = "Zeus";
+       vest[] = {"VSM_CarrierRig_Operator_OGA_OD"};
 	   backpack[] = {"SAM_Kitbag_rgr"};
 	   headgear[] = {"SAM_HelmetB_M90"};	
 	primaryWeapon[] = {"sfp_ak5c_m203"};   
 	items[] +=
     {
         "ACRE_PRC148",
+		"ACE_microDAGR",
 		"ACE_MapTools",
 		LIST_4("1Rnd_HE_Grenade_shell")
     };
 	linkedItems[] += 
 	{
-		"ItemcTab",
 		"ACE_Vector"
     };
     backpackItems[] = {
@@ -558,7 +548,8 @@ class zeus : soldat
 		"NVGoggles_OPFOR",
 		"ACE_CableTie",
 		"ACE_Banana",
-		"ry_canteen_item",
+		"ACE_Canteen",
+		"ACE_MRE_ChickenTikkaMasala",
         LIST_2("1Rnd_Smoke_Grenade_shell"),
         LIST_2("1Rnd_SmokeRed_Grenade_shell"),
 		LIST_2("1Rnd_SmokeGreen_Grenade_shell"),
@@ -571,6 +562,83 @@ class zeus : soldat
 		"ACE_SpraypaintBlue",
 		LIST_5("Chemlight_green"),
 		LIST_5("Chemlight_red"),
-		LIST_5("Chemlight_yellow")		
+		LIST_5("Chemlight_yellow")
     };
 };
+
+class ovningsledare 
+{
+    displayName = "Övningsledare";
+     uniform[] = {"SAM_Crye_M90_uniform","SAM_Crye_M90_uniform_r"};
+       vest[] = {"V_Safety_yellow_F"};
+       backpack[] = {"SAM_Kitbag_rgr"};
+       headgear[] = {"sfp_m90w_cap"};
+       goggles[] = {};
+       hmd[] = {};
+    primaryWeapon[] = {"sfp_ak5c_m203"};
+    scope[] = {"sfp_optic_aimpoint"};
+    bipod[] = {};
+    attachment[] = {"sam_accv_dbal"};
+    silencer[] = {};
+    secondaryWeapon[] = {};
+    secondaryAttachments[] = {};
+    sidearmWeapon[] = {"CUP_hgun_Glock17_blk"};
+    sidearmAttachments[] = {"sfp_tlr2"};
+
+    magazines[] =
+    {
+        LIST_1("CUP_17Rnd_9x19_glock17"),
+		LIST_2("sfp_30Rnd_556x45_Stanag_plastic"),
+		LIST_2("sam_hgr90"),
+		LIST_2("sam_rhgr5"),
+		"sam_chgr96"
+    };
+    items[] = 
+    {
+		LIST_2("ACE_fieldDressing"),
+		"ACE_tourniquet",
+		"ACE_quikclot",
+		"ACE_Flashlight_KSF1",
+		"ACE_IR_Strobe_Item"
+    };
+	
+    // These are added directly into their respective slots
+    linkedItems[] = {
+        "ItemMap",
+        "ItemCompass",
+		"ItemRadio",
+		"ACE_Vector",
+        "ACE_Altimeter"
+    };
+
+    // These are put into the backpack
+    backpackItems[] = {
+		"SAM_HelmetIA_M90",
+        "ACRE_PRC148",
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		LIST_2("1Rnd_HE_Grenade_shell"),
+		"ACE_NVG_Gen4",
+		"ACE_CableTie",
+        LIST_2("1Rnd_Smoke_Grenade_shell"),
+        LIST_2("1Rnd_SmokeRed_Grenade_shell"),
+		LIST_2("1Rnd_SmokeGreen_Grenade_shell"),
+		LIST_2("SmokeShellGreen"),
+		LIST_2("SmokeShellRed"),
+		"UGL_FlareGreen_F",	
+		"UGL_FlareRed_F",
+		"UGL_FlareCIR_F",
+		"ACE_HandFlare_Green",
+		"ACE_SpraypaintBlue",
+		LIST_5("Chemlight_green"),
+		LIST_5("Chemlight_red"),
+		LIST_5("Chemlight_yellow"),
+		"ACE_Canteen",
+		"ACE_MRE_ChickenTikkaMasala"
+    };
+
+    code = "";
+
+    radios[] = {"ACRE_PRC343"};
+};
+
