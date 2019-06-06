@@ -12,4 +12,4 @@ clearWeaponCargoGlobal _crate;
 clearMagazineCargoGlobal _crate;
 clearItemCargoGlobal _crate;
 clearBackpackCargoGlobal _crate;
-_crate addMagazineCargoGlobal ["launch_NLAW_F", 4];
+_crate addWeaponCargoGlobal ["launch_NLAW_F", 4];
