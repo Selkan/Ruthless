@@ -12,4 +12,4 @@ clearWeaponCargoGlobal _crate;
 clearMagazineCargoGlobal _crate;
 clearItemCargoGlobal _crate;
 clearBackpackCargoGlobal _crate;
-_crate addMagazineCargoGlobal ["sfp_30Rnd_556x45_Stanag_plastic", 30];
+_crate addMagazineCargoGlobal ["sfp_30Rnd_556x45_Stanag_plastic", 100];
