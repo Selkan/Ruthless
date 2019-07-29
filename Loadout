@@ -42,6 +42,10 @@ class soldat
 		"ACE_tourniquet",
 		"ACE_quikclot",
 		"ACE_Flashlight_KSF1",
+		"ACE_CableTie",
+		"ACE_Canteen",
+		"ACE_Banana",
+		"ACE_MRE_ChickenTikkaMasala",
 		"ACE_IR_Strobe_Item"
     };
 	
@@ -58,10 +62,6 @@ class soldat
 		"M90_Helmet1",
 		"G_Combat",
 		"ACE_NVG_Gen4",
-		"ACE_CableTie",
-		"ACE_Canteen",
-		"ACE_Banana",
-		"ACE_MRE_ChickenTikkaMasala"
     };
 
     // This is executed after unit init is complete. argument: _this = _unit.
@@ -80,17 +80,8 @@ class grpc : soldat
     items[] +=
     {
         "ACRE_PRC148",
-		"ACE_microDAGR",
-		"ACE_MapTools",
-		LIST_4("1Rnd_HE_Grenade_shell")
-    };
-	linkedItems[] += 
-	{
-		"ACE_Vector"
-    };
-    backpackItems[] += 
-	{
-        LIST_2("1Rnd_Smoke_Grenade_shell"),
+		LIST_4("1Rnd_HE_Grenade_shell"),
+		LIST_2("1Rnd_Smoke_Grenade_shell"),
         LIST_2("1Rnd_SmokeRed_Grenade_shell"),
 		LIST_2("1Rnd_SmokeGreen_Grenade_shell"),
 		LIST_2("SmokeShellGreen"),
@@ -102,7 +93,13 @@ class grpc : soldat
 		"ACE_SpraypaintBlue",
 		LIST_5("Chemlight_green"),
 		LIST_5("Chemlight_red"),
-		LIST_5("Chemlight_yellow"),
+		LIST_5("Chemlight_yellow")
+    };
+    backpackItems[] += 
+	{
+		"ACE_microDAGR",
+		"ACE_MapTools",
+		"ACE_Vector"
     };	
 };
 
@@ -177,14 +174,13 @@ class ksp90 : soldat
     magazines[] =
     {
         LIST_2("CUP_17Rnd_9x19_glock17"),
-		"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+		LIST_3("CUP_200Rnd_TE4_Red_Tracer_556x45_M249"),
 		LIST_2("sam_hgr90"),
 		LIST_2("sam_rhgr5"),
 		"sam_chgr96"
     };
     backpackItems[] += 
 	{
-		LIST_2("CUP_200Rnd_TE4_Red_Tracer_556x45_M249"),
 		"ACE_SpareBarrel"
     };
 };
@@ -217,10 +213,6 @@ class farb : soldat
     vest[] = {"VSM_LBT6094_MG_OGA_OD"};
 	backpack[] = {"SAM_Kitbag_rgr_eng"};
 	primaryWeapon[] = {"sfp_ak5c"};
-    items[] += 
-    {
-		"ACE_M26_Clacker"
-    };
     backpackItems[] += 
 	{
         "sfp_optic_3x_aimpoint",
@@ -231,6 +223,7 @@ class farb : soldat
 		"ACE_SpraypaintGreen",
 		"ACE_SpraypaintRed",
 		"ACE_DefusalKit",
+		"ACE_M26_Clacker",
 		"ACE_VMH3"
     };
 };
@@ -357,16 +350,16 @@ class obs : soldat
        backpack[] = {"SAM_Kitbag_rgr_eng"};
 	   items[] += 
     {
-		"ACRE_PRC148",
-		"ACE_Clacker",
-		"ACE_DefusalKit"
+		"ACRE_PRC148"
     };
     backpackItems[] += 
 	{
 		"ACE_Clacker",
 		"sfp_optic_3x_aimpoint",
         LIST_2("ClaymoreDirectionalMine_Remote_Mag"),
-		"ACE_wirecutter"	
+		"ACE_wirecutter",	
+		"ACE_Clacker",
+		"ACE_DefusalKit"
     };
     linkedItems[] += 
 	{
