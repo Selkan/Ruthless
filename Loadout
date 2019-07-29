@@ -118,7 +118,7 @@ class plutc : grpc
     };
 	linkedItems[] += 
 	{
-		"ACE_Altimeter"
+		"ALIVE_Tablet"
     };
 };
 
