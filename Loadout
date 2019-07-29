@@ -82,7 +82,7 @@ class grpc : soldat
         "ACRE_PRC148",
 		LIST_4("1Rnd_HE_Grenade_shell"),
 		LIST_2("1Rnd_Smoke_Grenade_shell"),
-        LIST_2("1Rnd_SmokeRed_Grenade_shell"),
+        	LIST_2("1Rnd_SmokeRed_Grenade_shell"),
 		LIST_2("1Rnd_SmokeGreen_Grenade_shell"),
 		LIST_2("SmokeShellGreen"),
 		LIST_2("SmokeShellRed"),
@@ -170,7 +170,8 @@ class ksp90 : soldat
     displayName = "Kulspruteskytt 90";
     vest[] = {"VSM_RAV_MG_OGA_OD"};
 	backpack[] = {"SAM_Kitbag_rgr"};
-    primaryWeapon[] = {"CUP_lmg_m249_para"};
+	primaryWeapon[] = {"CUP_lmg_m249_pip3"};
+    	scope[] = {"sfp_optic_aimpoint"};
     magazines[] =
     {
         LIST_2("CUP_17Rnd_9x19_glock17"),
@@ -296,7 +297,7 @@ class suavgrpc : soldat
 	{
         "B_UavTerminal",
 		LIST_2("1Rnd_Smoke_Grenade_shell"),
-        LIST_2("1Rnd_SmokeRed_Grenade_shell"),
+        	LIST_2("1Rnd_SmokeRed_Grenade_shell"),
 		LIST_2("1Rnd_SmokeGreen_Grenade_shell"),
 		LIST_2("SmokeShellGreen"),
 		LIST_2("SmokeShellRed"),
