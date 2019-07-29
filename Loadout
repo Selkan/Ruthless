@@ -45,7 +45,7 @@ class soldat
 		"ACE_CableTie",
 		"ACE_Canteen",
 		"ACE_Banana",
-		"ACE_MRE_ChickenTikkaMasala",
+		"ACE_MRE_MeatballsPasta",
 		"ACE_IR_Strobe_Item"
     };
 	
@@ -432,7 +432,7 @@ class pilot
 		"NVGogglesB_gry_f",
 		"ACE_IR_Strobe_Item",
 		"ACE_Canteen",
-		"ACE_MRE_ChickenTikkaMasala"
+		"ACE_MRE_MeatballsPasta"
     };
     linkedItems[] = {
         "ItemMap",
@@ -514,7 +514,7 @@ class civil
         LIST_2("ACE_fieldDressing"),
         "ACE_morphine",
 		"ACE_Canteen",
-		"ACE_MRE_ChickenTikkaMasala"
+		"ACE_MRE_MeatballsPasta"
     };
     radios[] = {};
 };
@@ -543,7 +543,7 @@ class zeus : soldat
 		"ACE_CableTie",
 		"ACE_Banana",
 		"ACE_Canteen",
-		"ACE_MRE_ChickenTikkaMasala",
+		"ACE_MRE_MeatballsPasta",
         LIST_2("1Rnd_Smoke_Grenade_shell"),
         LIST_2("1Rnd_SmokeRed_Grenade_shell"),
 		LIST_2("1Rnd_SmokeGreen_Grenade_shell"),
@@ -628,11 +628,10 @@ class ovningsledare
 		LIST_5("Chemlight_red"),
 		LIST_5("Chemlight_yellow"),
 		"ACE_Canteen",
-		"ACE_MRE_ChickenTikkaMasala"
+		"ACE_MRE_MeatballsPasta"
     };
 
     code = "";
 
     radios[] = {"ACRE_PRC343"};
 };
-
