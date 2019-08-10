@@ -45,7 +45,7 @@ class soldat
 		"ACE_CableTie",
 		"ACE_Canteen",
 		"ACE_Banana",
-		"ACE_MRE_MeatballsPasta",
+		"ACE_MRE_ChickenTikkaMasala",
 		"ACE_IR_Strobe_Item"
     };
 	
@@ -62,6 +62,10 @@ class soldat
 		"M90_Helmet1",
 		"G_Combat",
 		"ACE_NVG_Gen4",
+				 
+				
+			   
+						  
     };
 
     // This is executed after unit init is complete. argument: _this = _unit.
@@ -80,9 +84,18 @@ class grpc : soldat
     items[] +=
     {
         "ACRE_PRC148",
+				  
+				 
 		LIST_4("1Rnd_HE_Grenade_shell"),
+	  
+				  
+  
+			  
+	  
+					   
+  
 		LIST_2("1Rnd_Smoke_Grenade_shell"),
-        	LIST_2("1Rnd_SmokeRed_Grenade_shell"),
+        LIST_2("1Rnd_SmokeRed_Grenade_shell"),
 		LIST_2("1Rnd_SmokeGreen_Grenade_shell"),
 		LIST_2("SmokeShellGreen"),
 		LIST_2("SmokeShellRed"),
@@ -161,7 +174,8 @@ class sjv : soldat
 		LIST_5("ACE_atropine"),
 		LIST_8("ACE_epinephrine"),
 		LIST_8("ACE_morphine"),
-		"ACE_SpraypaintRed"
+		"ACE_SpraypaintRed",
+		LIST_4("adv_aceSplint_splint")
 	};
 };
 
@@ -170,8 +184,8 @@ class ksp90 : soldat
     displayName = "Kulspruteskytt 90";
     vest[] = {"VSM_RAV_MG_OGA_OD"};
 	backpack[] = {"SAM_Kitbag_rgr"};
-	primaryWeapon[] = {"CUP_lmg_m249_pip3"};
-    	scope[] = {"sfp_optic_aimpoint"};
+    primaryWeapon[] = {"CUP_lmg_m249_para"};
+									 
     magazines[] =
     {
         LIST_2("CUP_17Rnd_9x19_glock17"),
@@ -182,7 +196,13 @@ class ksp90 : soldat
     };
     backpackItems[] += 
 	{
+												  
 		"ACE_SpareBarrel"
+				 
+				 
+				
+			   
+						  
     };
 };
 
@@ -214,6 +234,10 @@ class farb : soldat
     vest[] = {"VSM_LBT6094_MG_OGA_OD"};
 	backpack[] = {"SAM_Kitbag_rgr_eng"};
 	primaryWeapon[] = {"sfp_ak5c"};
+			   
+	 
+				   
+	  
     backpackItems[] += 
 	{
         "sfp_optic_3x_aimpoint",
@@ -297,7 +321,7 @@ class suavgrpc : soldat
 	{
         "B_UavTerminal",
 		LIST_2("1Rnd_Smoke_Grenade_shell"),
-        	LIST_2("1Rnd_SmokeRed_Grenade_shell"),
+        LIST_2("1Rnd_SmokeRed_Grenade_shell"),
 		LIST_2("1Rnd_SmokeGreen_Grenade_shell"),
 		LIST_2("SmokeShellGreen"),
 		LIST_2("SmokeShellRed"),
@@ -352,6 +376,8 @@ class obs : soldat
 	   items[] += 
     {
 		"ACRE_PRC148"
+				
+				  
     };
     backpackItems[] += 
 	{
@@ -432,7 +458,7 @@ class pilot
 		"NVGogglesB_gry_f",
 		"ACE_IR_Strobe_Item",
 		"ACE_Canteen",
-		"ACE_MRE_MeatballsPasta"
+		"ACE_MRE_ChickenTikkaMasala"
     };
     linkedItems[] = {
         "ItemMap",
@@ -514,7 +540,7 @@ class civil
         LIST_2("ACE_fieldDressing"),
         "ACE_morphine",
 		"ACE_Canteen",
-		"ACE_MRE_MeatballsPasta"
+		"ACE_MRE_ChickenTikkaMasala"
     };
     radios[] = {};
 };
@@ -543,7 +569,7 @@ class zeus : soldat
 		"ACE_CableTie",
 		"ACE_Banana",
 		"ACE_Canteen",
-		"ACE_MRE_MeatballsPasta",
+		"ACE_MRE_ChickenTikkaMasala",
         LIST_2("1Rnd_Smoke_Grenade_shell"),
         LIST_2("1Rnd_SmokeRed_Grenade_shell"),
 		LIST_2("1Rnd_SmokeGreen_Grenade_shell"),
@@ -628,7 +654,7 @@ class ovningsledare
 		LIST_5("Chemlight_red"),
 		LIST_5("Chemlight_yellow"),
 		"ACE_Canteen",
-		"ACE_MRE_MeatballsPasta"
+		"ACE_MRE_ChickenTikkaMasala"
     };
 
     code = "";
