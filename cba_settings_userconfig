@@ -163,14 +163,14 @@ force force ace_medical_bleedingCoefficient = 0.5;
 force force ace_medical_blood_enabledFor = 2;
 force force ace_medical_consumeItem_PAK = 0;
 force force ace_medical_consumeItem_SurgicalKit = 0;
-force force ace_medical_convertItems = 1;
+force force ace_medical_convertItems = 2;
 force force ace_medical_delayUnconCaptive = 3;
 force force ace_medical_enableAdvancedWounds = true;
 force force ace_medical_enableFor = 1;
 force force ace_medical_enableOverdosing = true;
 force force ace_medical_enableRevive = 2; // 190808 AVE: Testar Revive för att skapa sjukvårdsstationen på Övningsfältet2.0
 force force ace_medical_enableScreams = true;
-force force ace_medical_enableUnconsciousnessAI = 1;
+force force ace_medical_enableUnconsciousnessAI = 0;  // 190814 AVE: Tar bort då det blir ohanterligt vid fler AI. Zombieattack...
 force force ace_medical_enableVehicleCrashes = true;
 force force ace_medical_healHitPointAfterAdvBandage = false;  // 190809 AVE: Testar att ändra i samband med ADV CPR / SPLINT
 force force ace_medical_increaseTrainingInLocations = true;
@@ -283,7 +283,7 @@ force force ace_scopes_zeroReferenceTemperature = 15;
 
 // ACE Spectator
 force force ace_spectator_enableAI = false;
-force force ace_spectator_restrictModes = 1;
+force force ace_spectator_restrictModes = 2;
 force force ace_spectator_restrictVisions = 1;
 
 // ACE Switch Units
@@ -676,7 +676,7 @@ force force acre_sys_zeus_zeusListenViaCamera = false;
 force force adv_aceCPR_addTime = 30;
 force force adv_aceCPR_AED_stationType = """Land_Defibrillator_F""";
 force force adv_aceCPR_chance_0 = 5;
-force force adv_aceCPR_chance_1 = 15;
+force force adv_aceCPR_chance_1 = 35;
 force force adv_aceCPR_chance_2 = 40;
 force force adv_aceCPR_chance_aed = 85;
 force force adv_aceCPR_enable = true;
@@ -690,7 +690,6 @@ force force adv_aceSplint_reopenChance_medic = 0;
 force force adv_aceSplint_reopenChance_regular = 30;
 force force adv_aceSplint_reopenTime = 600;
 force force adv_aceSplint_reuseChance = 80;					 
-
 // CBA UI
 force force cba_ui_notifyLifetime = 4;
 force force cba_ui_StorePasswords = 1;
