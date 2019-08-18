@@ -11,8 +11,8 @@ force force ace_advanced_fatigue_enabled = true;
 force force ace_advanced_fatigue_enableStaminaBar = true;
 force force ace_advanced_fatigue_loadFactor = 1;
 force force ace_advanced_fatigue_performanceFactor = 2.5;
-force force ace_advanced_fatigue_recoveryFactor = 2.5;
-force force ace_advanced_fatigue_swayFactor = 1.5;
+force force ace_advanced_fatigue_recoveryFactor = 3.5; //Ökat från 2.5 AVE 190818
+force force ace_advanced_fatigue_swayFactor = 1.0;  //Minskat från 1.5 AVE 190818
 force force ace_advanced_fatigue_terrainGradientFactor = 1;
 
 // ACE Advanced Throwing
@@ -155,7 +155,7 @@ force force ace_maptools_rotateModifierKey = 1;
 
 // ACE Medical
 force force ace_medical_ai_enabledFor = 1;
-force force ace_medical_AIDamageThreshold = 0.8;
+force force ace_medical_AIDamageThreshold = 5; // 190816 Tillfällig inför wicKes op. Standard: 0.8;
 force force ace_medical_allowLitterCreation = true;
 force force ace_medical_allowUnconsciousAnimationOnTreatment = true;
 force force ace_medical_amountOfReviveLives = -1;
@@ -170,7 +170,7 @@ force force ace_medical_enableFor = 1;
 force force ace_medical_enableOverdosing = true;
 force force ace_medical_enableRevive = 2; // 190808 AVE: Testar Revive för att skapa sjukvårdsstationen på Övningsfältet2.0
 force force ace_medical_enableScreams = true;
-force force ace_medical_enableUnconsciousnessAI = 0;  // 190814 AVE: Tar bort då det blir ohanterligt vid fler AI. Zombieattack...
+force force ace_medical_enableUnconsciousnessAI = 0;
 force force ace_medical_enableVehicleCrashes = true;
 force force ace_medical_healHitPointAfterAdvBandage = false;  // 190809 AVE: Testar att ändra i samband med ADV CPR / SPLINT
 force force ace_medical_increaseTrainingInLocations = true;
