@@ -79,7 +79,7 @@ class grpc : soldat
 	primaryWeapon[] = {"sfp_ak5c_m203"};
     items[] +=
     {
-        "ACRE_PRC148",
+        "ACRE_PRC152",
 		LIST_4("1Rnd_HE_Grenade_shell"),
 		LIST_2("1Rnd_Smoke_Grenade_shell"),
         LIST_2("1Rnd_SmokeRed_Grenade_shell"),
@@ -112,19 +112,29 @@ class stfgrpc : grpc
 class plutc : grpc 
 {
     displayName = "Plutonchef";
-    items[] += 
-    {
-		"ACRE_PRC148"
-    };
+	backpack[] = {"B_RadioBag_01_eaf_F"};
 	linkedItems[] += 
 	{
 		"ALIVE_Tablet"
     };
+	backpackItems[] += 
+	{
+		"ACRE_PRC117F"
+    };	
 };
 
 class stfplutc : stfgrpc 
 {
     displayName = "Stf plutonchef";
+	backpack[] = {"B_RadioBag_01_eaf_F"};
+	linkedItems[] += 
+	{
+		"ALIVE_Tablet"
+    };
+	backpackItems[] += 
+	{
+		"ACRE_PRC117F"
+    };	
 };
 
 class kompc : plutc
@@ -291,7 +301,7 @@ class suavgrpc : soldat
 	primaryWeapon[] = {"sfp_ak5c_m203"};
     items[] +=
     {
-        "ACRE_PRC148",
+        "ACRE_PRC152",
 		"ACE_MapTools",
 		LIST_4("1Rnd_HE_Grenade_shell")
     };
@@ -318,7 +328,7 @@ class uav : soldat
     displayName = "SUAV-pilot";
     backpack[] = {"B_MAV_B_BACKPACK"};
 	backpackItems[] = {"Default"};
-    radios[] += {"ACRE_PRC148"};
+    radios[] += {"ACRE_PRC152"};
 };
 
 class prsk : soldat 
@@ -339,7 +349,7 @@ class prsk : soldat
     };
 	items[] +=
 	{
-		"ACRE_PRC148"
+		"ACRE_PRC152"
 	};
     backpackItems[] += {
         "ACE_Yardage450"		
@@ -353,7 +363,7 @@ class obs : soldat
        backpack[] = {"SAM_Kitbag_rgr_eng"};
 	   items[] += 
     {
-		"ACRE_PRC148"
+		"ACRE_PRC152"
     };
     backpackItems[] += 
 	{
@@ -427,7 +437,6 @@ class pilot
     {
         LIST_2("ACE_fieldDressing"),
 		"ACE_tourniquet",
-		"ACRE_PRC148",
 		"ACRE_PRC152",
 		"ACRE_PRC343",
 		"ACE_Flashlight_KSF1",
@@ -525,7 +534,6 @@ class civil
 class zeus : plutc 
 {
     displayName = "Zeus";
-	headgear[] = {"M90_Helmet1"};
 };
 
 class ovningsledare : grpc
