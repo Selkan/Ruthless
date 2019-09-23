@@ -12,7 +12,7 @@ force force ace_advanced_fatigue_enableStaminaBar = true;
 force force ace_advanced_fatigue_loadFactor = 1;
 force force ace_advanced_fatigue_performanceFactor = 2.5;
 force force ace_advanced_fatigue_recoveryFactor = 3.5; //Ökat från 2.5 AVE 190818
-force force ace_advanced_fatigue_swayFactor = 1.0;  //Minskat från 1.5 AVE 190818
+force force ace_advanced_fatigue_swayFactor = 1;  //Minskat från 1.5 AVE 190818
 force force ace_advanced_fatigue_terrainGradientFactor = 1;
 
 // ACE Advanced Throwing
@@ -653,13 +653,14 @@ force force Achilles_var_moduleTreeSearchPatch = false;
 
 // ACRE2
 force force acre_sys_core_automaticAntennaDirection = false;
-force force acre_sys_core_defaultRadioVolume = 0.8;									   
+force force acre_sys_core_defaultRadioVolume = 0.8;
 force force acre_sys_core_fullDuplex = false;
 force force acre_sys_core_ignoreAntennaDirection = false;
 force force acre_sys_core_interference = true;
 force force acre_sys_core_postmixGlobalVolume = 1;
 force force acre_sys_core_premixGlobalVolume = 1;
 force force acre_sys_core_revealToAI = 1;
+acre_sys_signal_showSignalHint = true;
 force force acre_sys_core_spectatorVolume = 1;
 force force acre_sys_core_terrainLoss = 1;
 force force acre_sys_core_ts3ChannelName = "[A3] Multiplayer";
@@ -678,12 +679,12 @@ force force acre_sys_list_PTT1Color = [1,0.8,0,0.504709];
 force force acre_sys_list_PTT2Color = [0,0.8,1,0.504709];
 force force acre_sys_list_PTT3Color = [0,1,0,0.499121];
 force force acre_sys_list_SwitchChannelColor = [0.66,0.05,1,1];
-force force acre_sys_list_ToggleHeadsetColor = [0.66,0.05,1,1];						   
+force force acre_sys_list_ToggleHeadsetColor = [0.66,0.05,1,1];
 
 // ACRE2 Zeus
 force force acre_sys_zeus_zeusCanSpectate = true;
+force force acre_sys_zeus_zeusListenViaCamera = false;											  
 force force acre_sys_zeus_zeusDefaultVoiceSource = true;
-force force acre_sys_zeus_zeusListenViaCamera = false;
 
 // ADV - ACE CPR
 force force adv_aceCPR_addTime = 30;
@@ -766,6 +767,10 @@ force force L_Immerse_exShake = true;
 force force L_Immerse_force = true;
 force force L_Immerse_recoil = true;
 force force L_Immerse_twitch = true;
+
+// TFT Dismount
+tft_dismount_setting_override = true;
+tft_dismount_setting_priority = 7;
 
 // VCOM SETTINGS
 force force VCM_ActivateAI = true;
