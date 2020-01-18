@@ -10,7 +10,7 @@
 		{
 			class DefaultKeyPoint1
 			{
-				name="Ruha";
+				name="Muarp";
 				position[]={4393.5698,4454.2998};
 				type="NameCity";
 				radiusA=200;
