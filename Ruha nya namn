@@ -55,7 +55,7 @@
 			};
 			class Pihlajamaki
 			{
-				name="Pihlajamäki";
+				name="Bjällum";
 				position[]={3450.6299,6195.46};
 				type="NameVillage";
 				radiusA=200;
