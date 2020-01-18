@@ -37,7 +37,7 @@
 			};
 			class DefaultKeyPoint4
 			{
-				name="Huhtamäki";
+				name="Broddetorp";
 				position[]={2928.72,6546.73};
 				type="NameVillage";
 				radiusA=200;
