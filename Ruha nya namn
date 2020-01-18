@@ -181,7 +181,7 @@
 			};
 			class DefaultKeyPoint15
 			{
-				name="Virpimäki";
+				name="Kinnarp";
 				position[]={5211.1699,2160.6699};
 				type="NameVillage";
 				radiusA=200;
