@@ -316,7 +316,7 @@
 			};
 			class DefaultKeyPoint26
 			{
-				name="Latvamuilu";
+				name="Slutarp";
 				position[]={5611.7202,3280.0801};
 				type="NameVillage";
 				radiusA=200;
