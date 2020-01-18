@@ -73,7 +73,7 @@
 			};
 			class DefaultKeyPoint6
 			{
-				name="Marjasalo";
+				name="Gökhem";
 				position[]={1396.03,4875.8799};
 				type="NameVillage";
 				radiusA=200;
