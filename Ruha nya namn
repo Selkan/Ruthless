@@ -109,7 +109,7 @@
 			};
 			class Tervasmaki
 			{
-				name="Tervasmäki";
+				name="Skallmeja";
 				position[]={5234.52,7813.7202};
 				type="NameVillage";
 				radiusA=200;
