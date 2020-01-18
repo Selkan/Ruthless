@@ -181,7 +181,7 @@
 			};
 			class DefaultKeyPoint15
 			{
-				name="Kinnarp";
+				name="Virpimäki";
 				position[]={5211.1699,2160.6699};
 				type="NameVillage";
 				radiusA=200;
@@ -217,7 +217,7 @@
 			};
 			class metsalaoffice
 			{
-				name="Metsälä office";
+				name="Sveaborg";
 				position[]={6659.5498,1543.15};
 				type="NameVillage";
 				radiusA=200;
@@ -316,7 +316,7 @@
 			};
 			class DefaultKeyPoint26
 			{
-				name="Slutarp";
+				name="Latvamuilu";
 				position[]={5611.7202,3280.0801};
 				type="NameVillage";
 				radiusA=200;
@@ -343,7 +343,7 @@
 			};
 			class Lehto
 			{
-				name="Lehto";
+				name="Göteve";
 				position[]={6693.7598,3654.6101};
 				type="NameVillage";
 				radiusA=200;
