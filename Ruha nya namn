@@ -19,7 +19,7 @@
 			};
 			class DefaultKeyPoint2
 			{
-				name="Muilunkylä";
+				name="Åsle";
 				position[]={5026.4399,4119.3999};
 				type="NameVillage";
 				radiusA=200;
