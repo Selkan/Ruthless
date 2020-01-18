@@ -190,7 +190,7 @@
 			};
 			class DefaultKeyPoint16
 			{
-				name="Kivimäki";
+				name="Kinnekulle";
 				position[]={7671.1401,6539.4502};
 				type="NameVillage";
 				radiusA=200;
