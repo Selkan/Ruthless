@@ -73,7 +73,7 @@
 			};
 			class DefaultKeyPoint6
 			{
-				name="Gökhem";
+				name="Marjasalo";
 				position[]={1396.03,4875.8799};
 				type="NameVillage";
 				radiusA=200;
@@ -145,7 +145,7 @@
 			};
 			class DefaultKeyPoint11
 			{
-				name="Martikkalankylä";
+				name="Frufällan";
 				position[]={1293.28,189.28999};
 				type="NameVillage";
 				radiusA=200;
