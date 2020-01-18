@@ -46,7 +46,7 @@
 			};
 			class DefaultKeyPoint5
 			{
-				name="Pihlajamaa";
+				name="Norra Lundby";
 				position[]={2230.1399,7003.1802};
 				type="NameVillage";
 				radiusA=200;
