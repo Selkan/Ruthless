@@ -28,7 +28,7 @@
 			};
 			class DefaultKeyPoint3
 			{
-				name="Isomäki";
+				name="Högstena";
 				position[]={4483.27,5478.48};
 				type="NameVillage";
 				radiusA=200;
