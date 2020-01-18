@@ -208,7 +208,7 @@
 			};
 			class DefaultKeyPoint18
 			{
-				name="Metsälä";
+				name="Hagshults flygplats";
 				position[]={6833.4102,1155.37};
 				type="Airport";
 				radiusA=200;
