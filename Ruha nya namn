@@ -64,7 +64,7 @@
 			};
 			class Lansikylasawmill
 			{
-				name="Länsikylä sawmill";
+				name="Bittena Såg och Trävaru AB";
 				position[]={3431.23,7095.8901};
 				type="NameVillage";
 				radiusA=200;
