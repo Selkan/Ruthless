@@ -406,7 +406,7 @@
 			};
 			class DefaultKeyPoint30
 			{
-				name="Varjo Hotel";
+				name="Kurorten Mösseberg";
 				position[]={3605.9399,262.72};
 				type="NameVillage";
 				radiusA=149.19;
