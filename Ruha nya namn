@@ -73,7 +73,7 @@
 			};
 			class DefaultKeyPoint6
 			{
-				name="Marjasalo";
+				name="Hagaberg";
 				position[]={1396.03,4875.8799};
 				type="NameVillage";
 				radiusA=200;
@@ -82,7 +82,7 @@
 			};
 			class Mikinneva
 			{
-				name="Mikinneva";
+				name="Allmåsen";
 				position[]={724.479,5154.1099};
 				type="NameVillage";
 				radiusA=200;
@@ -91,7 +91,7 @@
 			};
 			class DefaultKeyPoint7
 			{
-				name="Hietalanmäki";
+				name="Koktaborg";
 				position[]={3181.5601,3359.9099};
 				type="NameVillage";
 				radiusA=200;
@@ -100,7 +100,7 @@
 			};
 			class Hyyppa
 			{
-				name="Hyyppä";
+				name="Hovstaholm";
 				position[]={2691.0801,4301.3999};
 				type="NameVillage";
 				radiusA=200;
@@ -109,7 +109,7 @@
 			};
 			class Tervasmaki
 			{
-				name="Skallmeja";
+				name="Skallmåsen";
 				position[]={5234.52,7813.7202};
 				type="NameVillage";
 				radiusA=200;
@@ -118,7 +118,7 @@
 			};
 			class DefaultKeyPoint8
 			{
-				name="Ojalankylä";
+				name="Lindeholm";
 				position[]={2328.3,2793.1299};
 				type="NameVillage";
 				radiusA=200;
@@ -127,7 +127,7 @@
 			};
 			class DefaultKeyPoint9
 			{
-				name="Mäkelä";
+				name="Skogaberg";
 				position[]={801.20001,1852.64};
 				type="NameVillage";
 				radiusA=138.03;
@@ -136,7 +136,7 @@
 			};
 			class DefaultKeyPoint10
 			{
-				name="Hipinmäki";
+				name="Sundbyfält";
 				position[]={2911.77,846.742};
 				type="NameVillage";
 				radiusA=200;
