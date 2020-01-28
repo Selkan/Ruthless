@@ -8,7 +8,7 @@ force force ace_advanced_ballistics_simulationInterval = 0.05;
 
 // ACE Advanced Fatigue
 force force ace_advanced_fatigue_enabled = true;
-force force ace_advanced_fatigue_enableStaminaBar = true;
+force force ace_advanced_fatigue_enableStaminaBar = false;
 force force ace_advanced_fatigue_fadeStaminaBar = true;
 force force ace_advanced_fatigue_loadFactor = 1;
 force force ace_advanced_fatigue_performanceFactor = 2.5;
@@ -60,7 +60,7 @@ force force ace_parachute_hideAltimeter = false;
 
 // ACE Cook off
 force force ace_cookoff_ammoCookoffDuration = 0.2;
-force force force ace_cookoff_enable = 2;
+force force ace_cookoff_enable = 2;
 force force ace_cookoff_enableAmmobox = true;
 force force ace_cookoff_enableAmmoCookoff = true;
 force force ace_cookoff_probabilityCoef = 0.1;
@@ -86,7 +86,7 @@ force force ace_frag_spallEnabled = true;
 
 // ACE Goggles
 force force ace_goggles_effects = 2;
-force force force ace_goggles_showClearGlasses = true;
+force force ace_goggles_showClearGlasses = true;
 force force ace_goggles_showInThirdPerson = false;
 
 // ACE Hearing
@@ -413,10 +413,10 @@ force force acex_field_rations_enabled = true;
 force force acex_field_rations_hudShowLevel = 0;
 force force acex_field_rations_hudTransparency = -1;
 force force acex_field_rations_hudType = 1;
-force force acex_field_rations_hungerSatiated = 1;
-force force acex_field_rations_thirstQuenched = 1;
-force force acex_field_rations_timeWithoutFood = 5;
-force force acex_field_rations_timeWithoutWater = 3;
+force force acex_field_rations_hungerSatiated = 7;
+force force acex_field_rations_thirstQuenched = 7;
+force force acex_field_rations_timeWithoutFood = 4;
+force force acex_field_rations_timeWithoutWater = 2;
 
 // ACEX Fortify
 force force acex_fortify_settingHint = 1;
@@ -620,7 +620,7 @@ Achilles_var_Achilles_Module_Spawn_Effects = true;
 Achilles_var_Achilles_Module_Spawn_Explosives = true;
 Achilles_var_Achilles_Module_Spawn_Intel = true;
 Achilles_var_Achilles_Module_Supply_Drop = true;
-Achilles_var_Achilles_Module_Zeus_AssignZeus = false;
+force force Achilles_var_Achilles_Module_Zeus_AssignZeus = false;
 Achilles_var_Achilles_Module_Zeus_SwitchUnit = true;
 Achilles_var_Achilles_Nuke_Module = false;
 force force Achilles_var_Achilles_Set_Date_Module = true;
@@ -779,6 +779,24 @@ force force grad_trenches_functions_shortEnvelopeDigTime = 20;
 force force grad_trenches_functions_smallEnvelopeDigTime = 30;
 force force grad_trenches_functions_stopBuildingAtFatigueMax = false;
 force force grad_trenches_functions_vehicleEnvelopeDigTime = 120;
+
+// LAMBS - Danger
+force force lambs_danger_CQB_range = 50;
+force force lambs_danger_debug_Drawing = false;
+force force lambs_danger_debug_FSM = false;
+force force lambs_danger_debug_FSM_civ = false;
+force force lambs_danger_debug_functions = false;
+force force lambs_danger_disableAIPlayerGroup = false;
+force force lambs_danger_disableAIPlayerGroupReaction = false;
+force force lambs_danger_disableAIPlayerGroupSuppression = false;
+force force lambs_danger_minSuppression_range = 25;
+force force lambs_danger_panic_chance = 10;
+force force lambs_danger_radio_backpack = 2000;
+force force lambs_danger_radio_EAST = 500;
+force force lambs_danger_radio_GUER = 500;
+force force lambs_danger_radio_shout = 50;
+force force lambs_danger_radio_WEST = 500;
+force force lambs_danger_RenderExpectedDestination = false;				   
 
 // Laxemann Immerse
 force force L_Immerse_exShake = true;
