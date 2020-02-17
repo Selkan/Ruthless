@@ -410,7 +410,7 @@ force force ace_zeus_zeusBird = true;
 // ACEX Field Rations
 force force acex_field_rations_affectAdvancedFatigue = true;
 force force acex_field_rations_enabled = true;
-force force acex_field_rations_hudShowLevel = 0;
+force force acex_field_rations_hudShowLevel = 50;
 force force acex_field_rations_hudTransparency = -1;
 force force acex_field_rations_hudType = 1;
 force force acex_field_rations_hungerSatiated = 7;
