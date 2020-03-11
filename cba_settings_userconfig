@@ -374,7 +374,7 @@ force force ace_vehicles_keepEngineRunning = true;
 
 // ACE View Distance Limiter
 force force ace_viewdistance_enabled = false;
-ace_viewdistance_limitViewDistance = 10000;
+force force ace_viewdistance_limitViewDistance = 10000;
 ace_viewdistance_objectViewDistanceCoeff = 0;
 ace_viewdistance_viewDistanceAirVehicle = 0;
 ace_viewdistance_viewDistanceLandVehicle = 0;
@@ -520,7 +520,10 @@ force force cf_woodland_branches_walking_range = 10;
 // CUP
 force force CUP_Vehicles_PreventBarrelClip = true;
 
-// GRAD Axe
+// Goobin's Gameplay Enhancements Core
+force force gge_core_var_debugMode = false;
+
+// GRAD Axek
 force force GRAD_axe_setting_maxTime = 40;
 force force GRAD_axe_setting_timeFactor = 0.6;
 
@@ -544,6 +547,12 @@ force force grad_trenches_functions_shortEnvelopeDigTime = 20;
 force force grad_trenches_functions_smallEnvelopeDigTime = 30;
 force force grad_trenches_functions_stopBuildingAtFatigueMax = false;
 force force grad_trenches_functions_vehicleEnvelopeDigTime = 120;
+
+// Guilt & Remembrance
+GR_AUTOPSY_CLASS = 1;
+GR_DEATHNOTIFY_MARKER = true;
+GR_DEATHNOTIFY_STYLE = 2;
+GR_ONKILL_ADDBODYBAG = false;
 
 // LAMBS - Danger
 force force lambs_danger_CQB_range = 50;
@@ -569,37 +578,21 @@ force force L_Immerse_force = true;
 force force L_Immerse_recoil = true;
 force force L_Immerse_twitch = true;
 
+// MrSanchez' Headlamp
+force force SAN_Headlamp_AI_UpdateRate = 30;
+force force SAN_Headlamp_Arcade = true;
+force force SAN_Headlamp_Multiplayer_UpdateRate = 30;
+force force SAN_Headlamp_RenderDistance = 1500;
+force force SAN_Headlamp_SoundClickEnabled = true;
+
 // TFT Dismount
 force force tft_dismount_setting_override = true;
 force force tft_dismount_setting_priority = 7;
 
-// Zeus Enhanced
-force force zen_camera_adaptiveSpeed = true;
-force force zen_camera_defaultSpeedCoef = 1;
-force force zen_camera_fastSpeedCoef = 1;
-force force zen_camera_followTerrain = true;
-force force zen_common_autoAddObjects = false;
-force force zen_common_darkMode = false;
-force force zen_common_disableGearAnim = true;
-force force zen_common_preferredArsenal = 1;
-force force zen_context_menu_enabled = 2;
-force force zen_editor_declutterEmptyTree = true;
-force force zen_editor_disableLiveSearch = true;
-force force zen_editor_moveDisplayToEdge = true;
-force force zen_editor_parachuteSounds = true;
-force force zen_editor_previews_enabled = true;
-force force zen_editor_removeWatermark = true;
-force force zen_editor_unitRadioMessages = 0;
-force force zen_visibility_enabled = false;
-force force zen_vision_enableBlackHot = false;
-force force zen_vision_enableBlackHotGreenCold = false;
-force force zen_vision_enableBlackHotRedCold = false;
-force force zen_vision_enableGreenHotCold = false;
-force force zen_vision_enableNVG = true;
-force force zen_vision_enableRedGreenThermal = false;
-force force zen_vision_enableRedHotCold = false;
-force force zen_vision_enableWhiteHot = true;
-force force zen_vision_enableWhiteHotRedCold = false;
+// UH-60M
+force force vtx_uh60m_simpleCollective = false;
+force force vtx_uh60m_trackIR_interaction_cursor = true;
+force force vtx_uh60m_trackIR_interaction_cursorSensitivity = 2.5;
 
 // VCOM SETTINGS
 force force VCM_ActivateAI = true;
@@ -631,3 +624,47 @@ force force VCM_TURRETUNLOAD = true;
 force force VCM_USECBASETTINGS = true;
 force force VCM_WARNDELAY = 30;
 force force VCM_WARNDIST = 800;
+
+// VET_Unflipping
+force force vet_unflipping_require_serviceVehicle = false;
+force force vet_unflipping_require_toolkit = false;
+force force vet_unflipping_time = 5;
+force force vet_unflipping_unit_man_limit = 7;
+force force vet_unflipping_unit_mass_limit = 2000;
+force force vet_unflipping_vehicle_mass_limit = 100000;
+
+// VS Static Line
+force force VS_ChuteClass = "";
+force force VS_StaticEquipped = true;
+
+// VXF Interaction
+force force vxf_interaction_updateEvery = 5;
+force force kvxf_uh60_interaction_pointing = true;
+
+// Zeus Enhanced
+force force zen_camera_adaptiveSpeed = true;
+force force zen_camera_defaultSpeedCoef = 1;
+force force zen_camera_fastSpeedCoef = 1;
+force force zen_camera_followTerrain = true;
+force force zen_common_autoAddObjects = false;
+force force zen_common_darkMode = false;
+force force zen_common_disableGearAnim = true;
+force force zen_common_preferredArsenal = 1;
+force force zen_context_menu_enabled = 2;
+force force zen_editor_declutterEmptyTree = true;
+force force zen_editor_disableLiveSearch = true;
+force force zen_editor_moveDisplayToEdge = true;
+force force zen_editor_parachuteSounds = true;
+force force zen_editor_previews_enabled = true;
+force force zen_editor_removeWatermark = true;
+force force zen_editor_unitRadioMessages = 0;
+force force zen_visibility_enabled = false;
+force force zen_vision_enableBlackHot = false;
+force force zen_vision_enableBlackHotGreenCold = false;
+force force zen_vision_enableBlackHotRedCold = false;
+force force zen_vision_enableGreenHotCold = false;
+force force zen_vision_enableNVG = true;
+force force zen_vision_enableRedGreenThermal = false;
+force force zen_vision_enableRedHotCold = false;
+force force zen_vision_enableWhiteHot = true;
+force force zen_vision_enableWhiteHotRedCold = false;
